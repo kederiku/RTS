@@ -6,8 +6,7 @@
 class	Warrior : public Unit
 {
 	public:
-		Warrior(const char*);
-//	void	action(void);
+		Warrior(const char* name, int id_player = -1);
 };
 
 #endif

@@ -3,7 +3,6 @@
 #include "ressources.h"
 #include "game.h"
 #include "map_editor.h"
-#include "waiting_room.h"
 #include "ui.hpp"
 #include "connection.h"
 

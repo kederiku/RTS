@@ -7,10 +7,12 @@
 
 class House : public Building
 {
-	public:
-			House(const char*);
-	bool	Init_Interface(Player* player);
-	bool	product(Lib2D::Control*, void* data);
+public:
+	House(const char*, int id_player = -1);
+	virtual ~House(void);
+
+	bool		Init_Interface(Player* player);
+	bool		product(Player* player, int value, std::list<Unit*>* unit_in_construct);
 };
 
 #endif

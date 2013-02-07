@@ -3,7 +3,9 @@
 
 #include "list_node.h"
 #include "point.h"
-struct	case_map;
+#include "control.h"
+#include "position.h"
+class	Map;
 
 class	astar
 {
@@ -11,24 +13,28 @@ class	astar
 	unsigned		__height;
 	id::list_node		__open;
 	id::list_node		__close;
-	case_map** 		__map;
+	Map*			__map;
+	std::list<Point>*	__way;
+	Lib2D::Control*		__unit;
 
-	bool		check_diagonal(const Point& pos, bool left, bool right, case_map* obstacle);
-	int		get_dir(Point* ret, const Point& pos, case_map* obstacle);
-	bool		is_case_valide(const Point& pos, case_map* obstacle);
+	void		search_closet_point(const position& pos, Point& ret);
+	void		get_closet_point(const Point& start, const Point& end, Point& ret);
 	void		clear_list(void);
-	unsigned	get_distance(const Point& begin, const Point& end);
-	bool		add_direction(const Point& pos, const Point& end, node* prev, int distance);
-	bool		search_any_direction(const Point& pos, const Point& end, node* prev, case_map* obstacle);
+	bool		add_direction(const Point& pos, const Point& end, node* prev, const int& distance);
+	bool		search_any_direction(const Point& pos, const Point& end, node* prev);
 	node*		get_closest_node(void);
-	bool		add_node(const Point& pos, const Point& end, node* prev, int distance);
+	bool		add_node(const Point& pos, const Point& end, node* prev, const int& distance);
+	bool		find_path(const Point& begin, const Point& end);
 public:
 	astar(void);
 
-	void		init(case_map** map, unsigned width, unsigned height);
-	bool		search_way(const Point& begin, const Point& end, case_map* obstacle);
-	bool		get_way(std::list<Point>* ret, bool first);
-	bool		show_way(void) const;
+	void	init(Map* map, std::list<Point>* way, Lib2D::Control* unit);
+	bool	search_way(const Point& begin, const Point& end);
+	bool	search_data(const Point& begin, bool (Map::*fct)(unsigned x, unsigned y) const);
+	bool	get_way(bool reverse);
+	bool	get_way(void (std::list<Point>::*fct)(const Point& add));
+//	bool	get_way(bool first);
+	bool	show_way(void) const;
 };
 
 #endif

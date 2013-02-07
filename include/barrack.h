@@ -8,9 +8,11 @@
 class	Barrack : public Building
 {
 public:
-		Barrack(const char* name);
-	bool	Init_Interface(Player* player);
-	bool	product(Lib2D::Control*, void* data);
+	Barrack(const char* name, int id_player = -1);
+	virtual ~Barrack(void);
+
+	bool		Init_Interface(Player* player);
+	bool		product(Player* player, int value, std::list<Unit*>* unit_in_construct);
 };
 
 #endif

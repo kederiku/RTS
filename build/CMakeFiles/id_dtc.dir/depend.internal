@@ -4,24 +4,251 @@
 CMakeFiles/id_dtc.dir/src/astar.cpp.o
  ../include/astar.h
  ../include/case_map.h
+ ../include/enums.h
+ ../include/info_pos.h
  ../include/list.hpp
  ../include/list_node.h
+ ../include/map.h
  ../include/node.h
  ../include/point.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/astar.cpp
+ ../include/position.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/astar.cpp
 CMakeFiles/id_dtc.dir/src/buffer.cpp.o
  ../include/buffer.h
  ../include/swap.hpp
  ../include/tools.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/buffer.cpp
+ /tmp/Dawn2289/src/buffer.cpp
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o
+ ../include/academy.h
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/client.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/mage.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/building/academy.cpp
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o
+ ../include/archer.h
  ../include/archery_range.h
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
  ../include/building.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
  ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
  ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -68,6 +295,7 @@ CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -110,15 +338,33 @@ CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/archery_range.cpp
+ /tmp/Dawn2289/src/building/archery_range.cpp
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o
+ ../include/astar.h
  ../include/barrack.h
+ ../include/buffer.h
+ ../include/buffer_size.h
  ../include/building.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
  ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
  ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
+ ../include/warrior.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -165,6 +411,7 @@ CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -207,110 +454,24 @@ CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/barrack.cpp
+ /tmp/Dawn2289/src/building/barrack.cpp
 CMakeFiles/id_dtc.dir/src/building/building.cpp.o
+ ../include/buffer.h
+ ../include/buffer_size.h
  ../include/building.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
  ../include/inter.h
+ ../include/network.h
  ../include/point.h
- ../uilibgp2016/include/Lib2D.h
- ../uilibgp2016/include/control.h
- ../uilibgp2016/include/control/../control.h
- ../uilibgp2016/include/control/../graphics/graphics.h
- ../uilibgp2016/include/control/../window/window.h
- ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/color.h
- ../uilibgp2016/include/control/display/mono.h
- ../uilibgp2016/include/control/display/mono/../../rect.h
- ../uilibgp2016/include/control/display/mono/../../surface.h
- ../uilibgp2016/include/control/display/mono/../../timer.h
- ../uilibgp2016/include/control/display/mono/../color.h
- ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
- ../uilibgp2016/include/control/display/mono/../object/label.h
- ../uilibgp2016/include/control/display/mono/button.h
- ../uilibgp2016/include/control/display/mono/check_button.h
- ../uilibgp2016/include/control/display/mono/label_button.h
- ../uilibgp2016/include/control/display/mono/pictures_button.h
- ../uilibgp2016/include/control/display/mono/textbox.h
- ../uilibgp2016/include/control/display/mono/textbox_alpha.h
- ../uilibgp2016/include/control/display/mono/textbox_num.h
- ../uilibgp2016/include/control/display/mono/toggle_button.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/../multi.h
- ../uilibgp2016/include/control/display/multi/box.h
- ../uilibgp2016/include/control/display/multi/box/../box.h
- ../uilibgp2016/include/control/display/multi/box/hbox.h
- ../uilibgp2016/include/control/display/multi/box/vbox.h
- ../uilibgp2016/include/control/display/multi/container.h
- ../uilibgp2016/include/control/display/multi/context.h
- ../uilibgp2016/include/control/display/multi/info_popup.h
- ../uilibgp2016/include/control/display/multi/popup.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/multi/table.h
- ../uilibgp2016/include/control/display/object.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/anim.h
- ../uilibgp2016/include/control/display/object/animation.h
- ../uilibgp2016/include/control/display/object/blitable.h
- ../uilibgp2016/include/control/display/object/darea.h
- ../uilibgp2016/include/control/display/object/image.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/control/display/object/label_link.h
- ../uilibgp2016/include/control/font.h
- ../uilibgp2016/include/control/items_classes.h
- ../uilibgp2016/include/control/rect.h
- ../uilibgp2016/include/control/surface.h
- ../uilibgp2016/include/control/timer.h
- ../uilibgp2016/include/engine.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/events_classes.h
- ../uilibgp2016/include/event/key_code.h
- ../uilibgp2016/include/event/keyboard/../keyboard_event.h
- ../uilibgp2016/include/event/keyboard/keyboard_down.h
- ../uilibgp2016/include/event/keyboard/keyboard_up.h
- ../uilibgp2016/include/event/keyboard_event.h
- ../uilibgp2016/include/event/mouse/../mouse_event.h
- ../uilibgp2016/include/event/mouse/mouse_down.h
- ../uilibgp2016/include/event/mouse/mouse_motion.h
- ../uilibgp2016/include/event/mouse/mouse_up.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/include/event/system/../system_event.h
- ../uilibgp2016/include/event/system/system_active.h
- ../uilibgp2016/include/event/system/system_context_switch.h
- ../uilibgp2016/include/event/system/system_quit.h
- ../uilibgp2016/include/event/system/system_resize.h
- ../uilibgp2016/include/event/system_event.h
- ../uilibgp2016/include/graphics/../control/display/color.h
- ../uilibgp2016/include/graphics/../control/rect.h
- ../uilibgp2016/include/graphics/../control/surface.h
- ../uilibgp2016/include/graphics/graphics.h
- ../uilibgp2016/include/signals/signal_lister.h
- ../uilibgp2016/include/signals/signal_lister.hpp
- ../uilibgp2016/include/signals/signal_maker.h
- ../uilibgp2016/include/signals/signal_maker.hpp
- ../uilibgp2016/include/sound/sound_manager.h
- ../uilibgp2016/include/window/../control/display.h
- ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
- ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
- ../uilibgp2016/include/window/window.h
- ../uilibgp2016/tools/c_buffer.h
- ../uilibgp2016/tools/c_buffer_types.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/building.cpp
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
- ../include/building.h
- ../include/enums.h
- ../include/farm.h
- ../include/info.h
- ../include/inter.h
- ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -325,7 +486,6 @@ CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
  ../uilibgp2016/include/control/display/mono/../../timer.h
  ../uilibgp2016/include/control/display/mono/../color.h
  ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
  ../uilibgp2016/include/control/display/mono/../object/label.h
  ../uilibgp2016/include/control/display/mono/button.h
  ../uilibgp2016/include/control/display/mono/check_button.h
@@ -337,6 +497,7 @@ CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
  ../uilibgp2016/include/control/display/mono/toggle_button.h
  ../uilibgp2016/include/control/display/multi.h
  ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
  ../uilibgp2016/include/control/display/multi/box.h
  ../uilibgp2016/include/control/display/multi/box/../box.h
  ../uilibgp2016/include/control/display/multi/box/hbox.h
@@ -357,6 +518,7 @@ CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -399,13 +561,14 @@ CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/farm.cpp
+ /tmp/Dawn2289/src/building/building.cpp
 CMakeFiles/id_dtc.dir/src/building/house.cpp.o
  ../include/building.h
  ../include/enums.h
  ../include/house.h
  ../include/info.h
  ../include/inter.h
+ ../include/player.h
  ../include/point.h
  ../include/ressources.h
  ../uilibgp2016/include/Lib2D.h
@@ -454,6 +617,7 @@ CMakeFiles/id_dtc.dir/src/building/house.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -496,15 +660,33 @@ CMakeFiles/id_dtc.dir/src/building/house.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/house.cpp
+ /tmp/Dawn2289/src/building/house.cpp
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
  ../include/building.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
  ../include/inter.h
+ ../include/knight.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
  ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
  ../include/stable.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -551,6 +733,7 @@ CMakeFiles/id_dtc.dir/src/building/stable.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -593,7 +776,123 @@ CMakeFiles/id_dtc.dir/src/building/stable.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/stable.cpp
+ /tmp/Dawn2289/src/building/stable.cpp
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/client.h
+ ../include/druide.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/temple.h
+ ../include/unit.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/building/temple.cpp
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.o
  ../include/building.h
  ../include/enums.h
@@ -648,6 +947,7 @@ CMakeFiles/id_dtc.dir/src/building/tower.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -690,235 +990,375 @@ CMakeFiles/id_dtc.dir/src/building/tower.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/tower.cpp
+ /tmp/Dawn2289/src/building/tower.cpp
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o
- ../include/building.h
- ../include/enums.h
- ../include/info.h
- ../include/info_img.h
- ../include/inter.h
- ../include/my_popup.h
- ../include/player.h
- ../include/point.h
- ../include/ressources.h
- ../include/town_center.h
- ../uilibgp2016/include/Lib2D.h
- ../uilibgp2016/include/control.h
- ../uilibgp2016/include/control/../control.h
- ../uilibgp2016/include/control/../graphics/graphics.h
- ../uilibgp2016/include/control/../window/window.h
- ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/color.h
- ../uilibgp2016/include/control/display/mono.h
- ../uilibgp2016/include/control/display/mono/../../rect.h
- ../uilibgp2016/include/control/display/mono/../../surface.h
- ../uilibgp2016/include/control/display/mono/../../timer.h
- ../uilibgp2016/include/control/display/mono/../color.h
- ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
- ../uilibgp2016/include/control/display/mono/../object/label.h
- ../uilibgp2016/include/control/display/mono/button.h
- ../uilibgp2016/include/control/display/mono/check_button.h
- ../uilibgp2016/include/control/display/mono/label_button.h
- ../uilibgp2016/include/control/display/mono/pictures_button.h
- ../uilibgp2016/include/control/display/mono/textbox.h
- ../uilibgp2016/include/control/display/mono/textbox_alpha.h
- ../uilibgp2016/include/control/display/mono/textbox_num.h
- ../uilibgp2016/include/control/display/mono/toggle_button.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/../multi.h
- ../uilibgp2016/include/control/display/multi/box.h
- ../uilibgp2016/include/control/display/multi/box/../box.h
- ../uilibgp2016/include/control/display/multi/box/hbox.h
- ../uilibgp2016/include/control/display/multi/box/vbox.h
- ../uilibgp2016/include/control/display/multi/container.h
- ../uilibgp2016/include/control/display/multi/context.h
- ../uilibgp2016/include/control/display/multi/info_popup.h
- ../uilibgp2016/include/control/display/multi/popup.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/multi/table.h
- ../uilibgp2016/include/control/display/object.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/anim.h
- ../uilibgp2016/include/control/display/object/animation.h
- ../uilibgp2016/include/control/display/object/blitable.h
- ../uilibgp2016/include/control/display/object/darea.h
- ../uilibgp2016/include/control/display/object/image.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/control/display/object/label_link.h
- ../uilibgp2016/include/control/font.h
- ../uilibgp2016/include/control/items_classes.h
- ../uilibgp2016/include/control/rect.h
- ../uilibgp2016/include/control/surface.h
- ../uilibgp2016/include/control/timer.h
- ../uilibgp2016/include/engine.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/events_classes.h
- ../uilibgp2016/include/event/key_code.h
- ../uilibgp2016/include/event/keyboard/../keyboard_event.h
- ../uilibgp2016/include/event/keyboard/keyboard_down.h
- ../uilibgp2016/include/event/keyboard/keyboard_up.h
- ../uilibgp2016/include/event/keyboard_event.h
- ../uilibgp2016/include/event/mouse/../mouse_event.h
- ../uilibgp2016/include/event/mouse/mouse_down.h
- ../uilibgp2016/include/event/mouse/mouse_motion.h
- ../uilibgp2016/include/event/mouse/mouse_up.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/include/event/system/../system_event.h
- ../uilibgp2016/include/event/system/system_active.h
- ../uilibgp2016/include/event/system/system_context_switch.h
- ../uilibgp2016/include/event/system/system_quit.h
- ../uilibgp2016/include/event/system/system_resize.h
- ../uilibgp2016/include/event/system_event.h
- ../uilibgp2016/include/graphics/../control/display/color.h
- ../uilibgp2016/include/graphics/../control/rect.h
- ../uilibgp2016/include/graphics/../control/surface.h
- ../uilibgp2016/include/graphics/graphics.h
- ../uilibgp2016/include/signals/signal_lister.h
- ../uilibgp2016/include/signals/signal_lister.hpp
- ../uilibgp2016/include/signals/signal_maker.h
- ../uilibgp2016/include/signals/signal_maker.hpp
- ../uilibgp2016/include/sound/sound_manager.h
- ../uilibgp2016/include/window/../control/display.h
- ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
- ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
- ../uilibgp2016/include/window/window.h
- ../uilibgp2016/tools/c_buffer.h
- ../uilibgp2016/tools/c_buffer_types.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/town_center.cpp
-CMakeFiles/id_dtc.dir/src/building_interface.cpp.o
- ../include/building_interface.h
- ../include/ressources.h
- ../uilibgp2016/include/Lib2D.h
- ../uilibgp2016/include/control.h
- ../uilibgp2016/include/control/../control.h
- ../uilibgp2016/include/control/../graphics/graphics.h
- ../uilibgp2016/include/control/../window/window.h
- ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/color.h
- ../uilibgp2016/include/control/display/mono.h
- ../uilibgp2016/include/control/display/mono/../../rect.h
- ../uilibgp2016/include/control/display/mono/../../surface.h
- ../uilibgp2016/include/control/display/mono/../../timer.h
- ../uilibgp2016/include/control/display/mono/../color.h
- ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
- ../uilibgp2016/include/control/display/mono/../object/label.h
- ../uilibgp2016/include/control/display/mono/button.h
- ../uilibgp2016/include/control/display/mono/check_button.h
- ../uilibgp2016/include/control/display/mono/label_button.h
- ../uilibgp2016/include/control/display/mono/pictures_button.h
- ../uilibgp2016/include/control/display/mono/textbox.h
- ../uilibgp2016/include/control/display/mono/textbox_alpha.h
- ../uilibgp2016/include/control/display/mono/textbox_num.h
- ../uilibgp2016/include/control/display/mono/toggle_button.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/../multi.h
- ../uilibgp2016/include/control/display/multi/box.h
- ../uilibgp2016/include/control/display/multi/box/../box.h
- ../uilibgp2016/include/control/display/multi/box/hbox.h
- ../uilibgp2016/include/control/display/multi/box/vbox.h
- ../uilibgp2016/include/control/display/multi/container.h
- ../uilibgp2016/include/control/display/multi/context.h
- ../uilibgp2016/include/control/display/multi/info_popup.h
- ../uilibgp2016/include/control/display/multi/popup.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/multi/table.h
- ../uilibgp2016/include/control/display/object.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/anim.h
- ../uilibgp2016/include/control/display/object/animation.h
- ../uilibgp2016/include/control/display/object/blitable.h
- ../uilibgp2016/include/control/display/object/darea.h
- ../uilibgp2016/include/control/display/object/image.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/control/display/object/label_link.h
- ../uilibgp2016/include/control/font.h
- ../uilibgp2016/include/control/items_classes.h
- ../uilibgp2016/include/control/rect.h
- ../uilibgp2016/include/control/surface.h
- ../uilibgp2016/include/control/timer.h
- ../uilibgp2016/include/engine.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/events_classes.h
- ../uilibgp2016/include/event/key_code.h
- ../uilibgp2016/include/event/keyboard/../keyboard_event.h
- ../uilibgp2016/include/event/keyboard/keyboard_down.h
- ../uilibgp2016/include/event/keyboard/keyboard_up.h
- ../uilibgp2016/include/event/keyboard_event.h
- ../uilibgp2016/include/event/mouse/../mouse_event.h
- ../uilibgp2016/include/event/mouse/mouse_down.h
- ../uilibgp2016/include/event/mouse/mouse_motion.h
- ../uilibgp2016/include/event/mouse/mouse_up.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/include/event/system/../system_event.h
- ../uilibgp2016/include/event/system/system_active.h
- ../uilibgp2016/include/event/system/system_context_switch.h
- ../uilibgp2016/include/event/system/system_quit.h
- ../uilibgp2016/include/event/system/system_resize.h
- ../uilibgp2016/include/event/system_event.h
- ../uilibgp2016/include/graphics/../control/display/color.h
- ../uilibgp2016/include/graphics/../control/rect.h
- ../uilibgp2016/include/graphics/../control/surface.h
- ../uilibgp2016/include/graphics/graphics.h
- ../uilibgp2016/include/signals/signal_lister.h
- ../uilibgp2016/include/signals/signal_lister.hpp
- ../uilibgp2016/include/signals/signal_maker.h
- ../uilibgp2016/include/signals/signal_maker.hpp
- ../uilibgp2016/include/sound/sound_manager.h
- ../uilibgp2016/include/window/../control/display.h
- ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
- ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
- ../uilibgp2016/include/window/window.h
- ../uilibgp2016/tools/c_buffer.h
- ../uilibgp2016/tools/c_buffer_types.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building_interface.cpp
-CMakeFiles/id_dtc.dir/src/callback.cpp.o
+ ../include/astar.h
  ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
  ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/network.h
+ ../include/node.h
+ ../include/peon.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/town_center.h
+ ../include/unit.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/building/town_center.cpp
+CMakeFiles/id_dtc.dir/src/building_interface.cpp.o
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building_interface.h
+ ../include/client.h
+ ../include/enums.h
+ ../include/env.hpp
  ../include/network.h
  ../include/point.h
  ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
  ../include/server.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/callback.cpp
+ ../include/state.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../display.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/building_interface.cpp
 CMakeFiles/id_dtc.dir/src/case_map.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
  ../include/case_map.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/case_map.cpp
+ ../include/client.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/map.h
+ ../include/network.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/case_map.cpp
 CMakeFiles/id_dtc.dir/src/client.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
  ../include/client.h
  ../include/enums.h
  ../include/network.h
  ../include/point.h
  ../include/response.h
  ../include/tools.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/client.cpp
+ /tmp/Dawn2289/src/client.cpp
 CMakeFiles/id_dtc.dir/src/connection.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
  ../include/client.h
  ../include/connection.h
  ../include/enums.h
  ../include/env.hpp
  ../include/info_img.h
+ ../include/menugame.h
  ../include/my_popup.h
  ../include/network.h
  ../include/point.h
  ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
  ../include/server.h
+ ../include/state.h
  ../include/ui.h
  ../include/ui.hpp
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -965,6 +1405,7 @@ CMakeFiles/id_dtc.dir/src/connection.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1009,14 +1450,283 @@ CMakeFiles/id_dtc.dir/src/connection.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/connection.cpp
+ /tmp/Dawn2289/src/connection.cpp
 CMakeFiles/id_dtc.dir/src/container_game.cpp.o
+ ../include/archery_range.h
+ ../include/barrack.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/building_interface.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/container_game.h
  ../include/enums.h
+ ../include/env.hpp
+ ../include/game.h
+ ../include/house.h
+ ../include/info.h
  ../include/info_img.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/interface.h
  ../include/list.hpp
  ../include/map.h
+ ../include/map_editor.h
  ../include/my_popup.h
+ ../include/network.h
+ ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/stable.h
+ ../include/state.h
+ ../include/tower.h
+ ../include/town_center.h
+ ../include/ui.h
+ ../include/ui.hpp
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/ns_var.h
+ ../uilibgp2016/tools/ns_var.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/container_game.cpp
+CMakeFiles/id_dtc.dir/src/game.cpp.o
+ ../include/academy.h
+ ../include/archer.h
+ ../include/archery_range.h
+ ../include/astar.h
+ ../include/barrack.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/building_interface.h
+ ../include/case_map.h
+ ../include/client.h
+ ../include/container_game.h
+ ../include/druide.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/game.h
+ ../include/house.h
+ ../include/info.h
+ ../include/info_img.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/interface.h
+ ../include/knight.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/mage.h
+ ../include/map.h
+ ../include/map_editor.h
+ ../include/my_popup.h
+ ../include/nation.h
+ ../include/network.h
+ ../include/node.h
+ ../include/peon.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/stable.h
+ ../include/state.h
+ ../include/temple.h
+ ../include/tower.h
+ ../include/town_center.h
+ ../include/ui.hpp
+ ../include/unit.h
+ ../include/user.h
+ ../include/warrior.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/ns_var.h
+ ../uilibgp2016/tools/ns_var.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/game.cpp
+CMakeFiles/id_dtc.dir/src/info.cpp.o
+ ../include/enums.h
+ ../include/info.h
+ ../include/inter.h
  ../include/point.h
  ../include/ressources.h
  ../include/ui.h
@@ -1067,6 +1777,7 @@ CMakeFiles/id_dtc.dir/src/container_game.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1111,17 +1822,143 @@ CMakeFiles/id_dtc.dir/src/container_game.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/container_game.cpp
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/create_server.cpp
-CMakeFiles/id_dtc.dir/src/game.cpp.o
+ /tmp/Dawn2289/src/info.cpp
+CMakeFiles/id_dtc.dir/src/inter.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/case_map.h
+ ../include/client.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/map.h
+ ../include/network.h
+ ../include/node.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/tools.h
+ ../include/ui.h
+ ../include/ui.hpp
+ ../include/unit.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/ns_var.h
+ ../uilibgp2016/tools/ns_var.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/inter.cpp
+CMakeFiles/id_dtc.dir/src/interface.cpp.o
+ ../include/academy.h
+ ../include/archery_range.h
+ ../include/barrack.h
  ../include/building.h
  ../include/building_interface.h
- ../include/container_game.h
+ ../include/case_map.h
  ../include/enums.h
  ../include/game.h
+ ../include/house.h
  ../include/info.h
  ../include/info_img.h
+ ../include/info_pos.h
  ../include/inter.h
  ../include/interface.h
  ../include/map.h
@@ -1129,7 +1966,15 @@ CMakeFiles/id_dtc.dir/src/game.cpp.o
  ../include/my_popup.h
  ../include/player.h
  ../include/point.h
+ ../include/response.h
  ../include/ressources.h
+ ../include/stable.h
+ ../include/state.h
+ ../include/temple.h
+ ../include/tools.h
+ ../include/tower.h
+ ../include/town_center.h
+ ../include/ui.h
  ../include/ui.hpp
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
@@ -1137,7 +1982,6 @@ CMakeFiles/id_dtc.dir/src/game.cpp.o
  ../uilibgp2016/include/control/../graphics/graphics.h
  ../uilibgp2016/include/control/../window/window.h
  ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
  ../uilibgp2016/include/control/display/color.h
  ../uilibgp2016/include/control/display/mono.h
  ../uilibgp2016/include/control/display/mono/../../rect.h
@@ -1168,6 +2012,7 @@ CMakeFiles/id_dtc.dir/src/game.cpp.o
  ../uilibgp2016/include/control/display/multi/popup_m.h
  ../uilibgp2016/include/control/display/multi/table.h
  ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../display.h
  ../uilibgp2016/include/control/display/object/../../font.h
  ../uilibgp2016/include/control/display/object/../object.h
  ../uilibgp2016/include/control/display/object/anim.h
@@ -1177,106 +2022,7 @@ CMakeFiles/id_dtc.dir/src/game.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
- ../uilibgp2016/include/control/font.h
- ../uilibgp2016/include/control/items_classes.h
- ../uilibgp2016/include/control/rect.h
- ../uilibgp2016/include/control/surface.h
- ../uilibgp2016/include/control/timer.h
- ../uilibgp2016/include/engine.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/events_classes.h
- ../uilibgp2016/include/event/key_code.h
- ../uilibgp2016/include/event/keyboard/../keyboard_event.h
- ../uilibgp2016/include/event/keyboard/keyboard_down.h
- ../uilibgp2016/include/event/keyboard/keyboard_up.h
- ../uilibgp2016/include/event/keyboard_event.h
- ../uilibgp2016/include/event/mouse/../mouse_event.h
- ../uilibgp2016/include/event/mouse/mouse_down.h
- ../uilibgp2016/include/event/mouse/mouse_motion.h
- ../uilibgp2016/include/event/mouse/mouse_up.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/include/event/system/../system_event.h
- ../uilibgp2016/include/event/system/system_active.h
- ../uilibgp2016/include/event/system/system_context_switch.h
- ../uilibgp2016/include/event/system/system_quit.h
- ../uilibgp2016/include/event/system/system_resize.h
- ../uilibgp2016/include/event/system_event.h
- ../uilibgp2016/include/graphics/../control/display/color.h
- ../uilibgp2016/include/graphics/../control/rect.h
- ../uilibgp2016/include/graphics/../control/surface.h
- ../uilibgp2016/include/graphics/graphics.h
- ../uilibgp2016/include/signals/signal_lister.h
- ../uilibgp2016/include/signals/signal_lister.hpp
- ../uilibgp2016/include/signals/signal_maker.h
- ../uilibgp2016/include/signals/signal_maker.hpp
- ../uilibgp2016/include/sound/sound_manager.h
- ../uilibgp2016/include/window/../control/display.h
- ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
- ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
- ../uilibgp2016/include/window/window.h
- ../uilibgp2016/tools/c_buffer.h
- ../uilibgp2016/tools/c_buffer_types.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/game.cpp
-CMakeFiles/id_dtc.dir/src/info.cpp.o
- ../include/info.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/info.cpp
-CMakeFiles/id_dtc.dir/src/inter.cpp.o
- ../include/building.h
- ../include/enums.h
- ../include/info.h
- ../include/inter.h
- ../include/player.h
- ../include/point.h
- ../include/ressources.h
- ../uilibgp2016/include/Lib2D.h
- ../uilibgp2016/include/control.h
- ../uilibgp2016/include/control/../control.h
- ../uilibgp2016/include/control/../graphics/graphics.h
- ../uilibgp2016/include/control/../window/window.h
- ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/color.h
- ../uilibgp2016/include/control/display/mono.h
- ../uilibgp2016/include/control/display/mono/../../rect.h
- ../uilibgp2016/include/control/display/mono/../../surface.h
- ../uilibgp2016/include/control/display/mono/../../timer.h
- ../uilibgp2016/include/control/display/mono/../color.h
- ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
- ../uilibgp2016/include/control/display/mono/../object/label.h
- ../uilibgp2016/include/control/display/mono/button.h
- ../uilibgp2016/include/control/display/mono/check_button.h
- ../uilibgp2016/include/control/display/mono/label_button.h
- ../uilibgp2016/include/control/display/mono/pictures_button.h
- ../uilibgp2016/include/control/display/mono/textbox.h
- ../uilibgp2016/include/control/display/mono/textbox_alpha.h
- ../uilibgp2016/include/control/display/mono/textbox_num.h
- ../uilibgp2016/include/control/display/mono/toggle_button.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/../multi.h
- ../uilibgp2016/include/control/display/multi/box.h
- ../uilibgp2016/include/control/display/multi/box/../box.h
- ../uilibgp2016/include/control/display/multi/box/hbox.h
- ../uilibgp2016/include/control/display/multi/box/vbox.h
- ../uilibgp2016/include/control/display/multi/container.h
- ../uilibgp2016/include/control/display/multi/context.h
- ../uilibgp2016/include/control/display/multi/info_popup.h
- ../uilibgp2016/include/control/display/multi/popup.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/multi/table.h
- ../uilibgp2016/include/control/display/object.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/anim.h
- ../uilibgp2016/include/control/display/object/animation.h
- ../uilibgp2016/include/control/display/object/blitable.h
- ../uilibgp2016/include/control/display/object/darea.h
- ../uilibgp2016/include/control/display/object/image.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1321,120 +2067,16 @@ CMakeFiles/id_dtc.dir/src/inter.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/inter.cpp
-CMakeFiles/id_dtc.dir/src/interface.cpp.o
- ../include/archery_range.h
- ../include/barrack.h
- ../include/building.h
- ../include/building_interface.h
- ../include/enums.h
- ../include/farm.h
- ../include/house.h
- ../include/info.h
- ../include/inter.h
- ../include/interface.h
- ../include/point.h
- ../include/ressources.h
- ../include/stable.h
- ../include/tower.h
- ../include/town_center.h
- ../uilibgp2016/include/Lib2D.h
- ../uilibgp2016/include/control.h
- ../uilibgp2016/include/control/../control.h
- ../uilibgp2016/include/control/../graphics/graphics.h
- ../uilibgp2016/include/control/../window/window.h
- ../uilibgp2016/include/control/display.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/color.h
- ../uilibgp2016/include/control/display/mono.h
- ../uilibgp2016/include/control/display/mono/../../rect.h
- ../uilibgp2016/include/control/display/mono/../../surface.h
- ../uilibgp2016/include/control/display/mono/../../timer.h
- ../uilibgp2016/include/control/display/mono/../color.h
- ../uilibgp2016/include/control/display/mono/../mono.h
- ../uilibgp2016/include/control/display/mono/../object/image.h
- ../uilibgp2016/include/control/display/mono/../object/label.h
- ../uilibgp2016/include/control/display/mono/button.h
- ../uilibgp2016/include/control/display/mono/check_button.h
- ../uilibgp2016/include/control/display/mono/label_button.h
- ../uilibgp2016/include/control/display/mono/pictures_button.h
- ../uilibgp2016/include/control/display/mono/textbox.h
- ../uilibgp2016/include/control/display/mono/textbox_alpha.h
- ../uilibgp2016/include/control/display/mono/textbox_num.h
- ../uilibgp2016/include/control/display/mono/toggle_button.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/../multi.h
- ../uilibgp2016/include/control/display/multi/box.h
- ../uilibgp2016/include/control/display/multi/box/../box.h
- ../uilibgp2016/include/control/display/multi/box/hbox.h
- ../uilibgp2016/include/control/display/multi/box/vbox.h
- ../uilibgp2016/include/control/display/multi/container.h
- ../uilibgp2016/include/control/display/multi/context.h
- ../uilibgp2016/include/control/display/multi/info_popup.h
- ../uilibgp2016/include/control/display/multi/popup.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/multi/table.h
- ../uilibgp2016/include/control/display/object.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/anim.h
- ../uilibgp2016/include/control/display/object/animation.h
- ../uilibgp2016/include/control/display/object/blitable.h
- ../uilibgp2016/include/control/display/object/darea.h
- ../uilibgp2016/include/control/display/object/image.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/control/display/object/label_link.h
- ../uilibgp2016/include/control/font.h
- ../uilibgp2016/include/control/items_classes.h
- ../uilibgp2016/include/control/rect.h
- ../uilibgp2016/include/control/surface.h
- ../uilibgp2016/include/control/timer.h
- ../uilibgp2016/include/engine.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/events_classes.h
- ../uilibgp2016/include/event/key_code.h
- ../uilibgp2016/include/event/keyboard/../keyboard_event.h
- ../uilibgp2016/include/event/keyboard/keyboard_down.h
- ../uilibgp2016/include/event/keyboard/keyboard_up.h
- ../uilibgp2016/include/event/keyboard_event.h
- ../uilibgp2016/include/event/mouse/../mouse_event.h
- ../uilibgp2016/include/event/mouse/mouse_down.h
- ../uilibgp2016/include/event/mouse/mouse_motion.h
- ../uilibgp2016/include/event/mouse/mouse_up.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/include/event/system/../system_event.h
- ../uilibgp2016/include/event/system/system_active.h
- ../uilibgp2016/include/event/system/system_context_switch.h
- ../uilibgp2016/include/event/system/system_quit.h
- ../uilibgp2016/include/event/system/system_resize.h
- ../uilibgp2016/include/event/system_event.h
- ../uilibgp2016/include/graphics/../control/display/color.h
- ../uilibgp2016/include/graphics/../control/rect.h
- ../uilibgp2016/include/graphics/../control/surface.h
- ../uilibgp2016/include/graphics/graphics.h
- ../uilibgp2016/include/signals/signal_lister.h
- ../uilibgp2016/include/signals/signal_lister.hpp
- ../uilibgp2016/include/signals/signal_maker.h
- ../uilibgp2016/include/signals/signal_maker.hpp
- ../uilibgp2016/include/sound/sound_manager.h
- ../uilibgp2016/include/window/../control/display.h
- ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
- ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
- ../uilibgp2016/include/window/window.h
- ../uilibgp2016/tools/c_buffer.h
- ../uilibgp2016/tools/c_buffer_types.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/interface.cpp
+ /tmp/Dawn2289/src/interface.cpp
 CMakeFiles/id_dtc.dir/src/list_node.cpp.o
  ../include/list.hpp
  ../include/list_node.h
  ../include/node.h
  ../include/point.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/list_node.cpp
+ /tmp/Dawn2289/src/list_node.cpp
 CMakeFiles/id_dtc.dir/src/main.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
  ../include/client.h
  ../include/enums.h
  ../include/env.hpp
@@ -1442,7 +2084,11 @@ CMakeFiles/id_dtc.dir/src/main.cpp.o
  ../include/network.h
  ../include/point.h
  ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
  ../include/server.h
+ ../include/state.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -1489,6 +2135,7 @@ CMakeFiles/id_dtc.dir/src/main.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1531,14 +2178,34 @@ CMakeFiles/id_dtc.dir/src/main.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/main.cpp
+ /tmp/Dawn2289/src/main.cpp
 CMakeFiles/id_dtc.dir/src/map.cpp.o
+ ../include/astar.h
  ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
  ../include/case_map.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
  ../include/map.h
+ ../include/network.h
+ ../include/node.h
  ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/unit.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -1585,6 +2252,7 @@ CMakeFiles/id_dtc.dir/src/map.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1629,17 +2297,31 @@ CMakeFiles/id_dtc.dir/src/map.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map.cpp
+ /tmp/Dawn2289/src/map.cpp
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.o
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building_interface.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/container_game.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info_img.h
+ ../include/info_pos.h
+ ../include/interface.h
  ../include/map.h
  ../include/map_editor.h
  ../include/my_popup.h
+ ../include/network.h
  ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
  ../include/ui.hpp
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -1686,6 +2368,7 @@ CMakeFiles/id_dtc.dir/src/map_editor.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1730,21 +2413,24 @@ CMakeFiles/id_dtc.dir/src/map_editor.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map_editor.cpp
+ /tmp/Dawn2289/src/map_editor.cpp
 CMakeFiles/id_dtc.dir/src/menu.cpp.o
+ ../include/case_map.h
  ../include/connection.h
  ../include/enums.h
  ../include/game.h
  ../include/info_img.h
+ ../include/info_pos.h
  ../include/map.h
  ../include/map_editor.h
  ../include/menu.h
  ../include/menugame.h
  ../include/my_popup.h
  ../include/point.h
+ ../include/response.h
  ../include/ressources.h
+ ../include/state.h
  ../include/ui.hpp
- ../include/waiting_room.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -1791,6 +2477,7 @@ CMakeFiles/id_dtc.dir/src/menu.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1835,14 +2522,17 @@ CMakeFiles/id_dtc.dir/src/menu.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu.cpp
+ /tmp/Dawn2289/src/menu.cpp
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/case_map.h
  ../include/client.h
  ../include/enums.h
  ../include/env.hpp
  ../include/game.h
  ../include/info_img.h
+ ../include/info_pos.h
  ../include/list.hpp
  ../include/map.h
  ../include/map_editor.h
@@ -1853,10 +2543,13 @@ CMakeFiles/id_dtc.dir/src/menu_game.cpp.o
  ../include/player.h
  ../include/point.h
  ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
  ../include/server.h
+ ../include/state.h
  ../include/ui.h
  ../include/ui.hpp
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -1903,6 +2596,7 @@ CMakeFiles/id_dtc.dir/src/menu_game.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -1944,28 +2638,42 @@ CMakeFiles/id_dtc.dir/src/menu_game.cpp.o
  ../uilibgp2016/tools/c_buffer_types.h
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/ns_var.h
+ ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu_game.cpp
+ /tmp/Dawn2289/src/menu_game.cpp
 CMakeFiles/id_dtc.dir/src/msg.cpp.o
  ../include/enums.h
  ../include/point.h
  ../include/response.h
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/msg.cpp
+ /tmp/Dawn2289/src/msg.cpp
 CMakeFiles/id_dtc.dir/src/mutex.cpp.o
  ../include/mutex.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/mutex.cpp
+ /tmp/Dawn2289/src/mutex.cpp
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.o
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info_img.h
+ ../include/info_pos.h
  ../include/map.h
  ../include/map_editor.h
  ../include/my_popup.h
+ ../include/network.h
  ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
  ../include/ui.h
  ../include/ui.hpp
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/display.h
@@ -2014,6 +2722,7 @@ CMakeFiles/id_dtc.dir/src/my_popup.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -2058,18 +2767,22 @@ CMakeFiles/id_dtc.dir/src/my_popup.cpp.o
  ../uilibgp2016/tools/ns_var.h
  ../uilibgp2016/tools/ns_var.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/my_popup.cpp
+ /tmp/Dawn2289/src/my_popup.cpp
 CMakeFiles/id_dtc.dir/src/nation.cpp.o
- ../include/archer.h
- ../include/druide.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/client.h
  ../include/enums.h
- ../include/info.h
- ../include/knight.h
- ../include/mage.h
+ ../include/env.hpp
  ../include/nation.h
+ ../include/network.h
+ ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
  ../include/ressources.h
- ../include/unit.h
- ../include/warrior.h
+ ../include/server.h
+ ../include/state.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -2116,6 +2829,7 @@ CMakeFiles/id_dtc.dir/src/nation.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -2158,13 +2872,16 @@ CMakeFiles/id_dtc.dir/src/nation.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/nation.cpp
+ /tmp/Dawn2289/src/nation.cpp
 CMakeFiles/id_dtc.dir/src/network.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/case_map.h
  ../include/client.h
  ../include/enums.h
  ../include/game.h
  ../include/info_img.h
+ ../include/info_pos.h
  ../include/map.h
  ../include/map_editor.h
  ../include/my_popup.h
@@ -2173,7 +2890,9 @@ CMakeFiles/id_dtc.dir/src/network.cpp.o
  ../include/point.h
  ../include/response.h
  ../include/server.h
+ ../include/state.h
  ../include/tools.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -2220,6 +2939,7 @@ CMakeFiles/id_dtc.dir/src/network.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -2262,17 +2982,38 @@ CMakeFiles/id_dtc.dir/src/network.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/network.cpp
+ /tmp/Dawn2289/src/network.cpp
 CMakeFiles/id_dtc.dir/src/node.cpp.o
  ../include/node.h
  ../include/point.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/node.cpp
+ /tmp/Dawn2289/src/node.cpp
 CMakeFiles/id_dtc.dir/src/player.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
+ ../include/info_pos.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/map.h
  ../include/nation.h
+ ../include/network.h
+ ../include/node.h
  ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
  ../include/unit.h
+ ../include/user.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -2319,6 +3060,7 @@ CMakeFiles/id_dtc.dir/src/player.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -2361,12 +3103,153 @@ CMakeFiles/id_dtc.dir/src/player.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/player.cpp
+ /tmp/Dawn2289/src/player.cpp
 CMakeFiles/id_dtc.dir/src/point.cpp.o
  ../include/point.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/point.cpp
+ /tmp/Dawn2289/src/point.cpp
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o
+ ../include/enums.h
+ ../include/point.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../uilibgp2016/include/control/display/object/../../../control.h
+ ../uilibgp2016/include/control/display/object/../../../control/rect.h
+ ../uilibgp2016/include/control/display/object/../../../event/event.h
+ ../uilibgp2016/include/control/display/object/../../../graphics/../control/display/color.h
+ ../uilibgp2016/include/control/display/object/../../../graphics/../control/surface.h
+ ../uilibgp2016/include/control/display/object/../../../graphics/graphics.h
+ ../uilibgp2016/include/control/display/object/../../../signals/signal_lister.h
+ ../uilibgp2016/include/control/display/object/../../../signals/signal_lister.hpp
+ ../uilibgp2016/include/control/display/object/../../../signals/signal_maker.h
+ ../uilibgp2016/include/control/display/object/../../../signals/signal_maker.hpp
+ ../uilibgp2016/include/control/display/object/../../../window/../control/display.h
+ ../uilibgp2016/include/control/display/object/../../../window/../control/rect.h
+ ../uilibgp2016/include/control/display/object/../../../window/window.h
+ ../uilibgp2016/include/control/display/object/../../display.h
+ ../uilibgp2016/include/control/display/object/../../display/color.h
+ ../uilibgp2016/include/control/display/object/../../surface.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/ressource.cpp
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/case_map.h
+ ../include/client.h
+ ../include/enums.h
+ ../include/env.hpp
+ ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/map.h
+ ../include/network.h
+ ../include/point.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/state.h
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../../control.h
+ ../uilibgp2016/include/control/display/../../graphics/../control/display/color.h
+ ../uilibgp2016/include/control/display/../../graphics/../control/surface.h
+ ../uilibgp2016/include/control/display/../../graphics/graphics.h
+ ../uilibgp2016/include/control/display/../../window/../control/display.h
+ ../uilibgp2016/include/control/display/../../window/../control/rect.h
+ ../uilibgp2016/include/control/display/../../window/window.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/../display/color.h
+ ../uilibgp2016/include/control/display/../surface.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/ressources.cpp
 CMakeFiles/id_dtc.dir/src/server.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
  ../include/enums.h
  ../include/list.hpp
  ../include/network.h
@@ -2375,12 +3258,16 @@ CMakeFiles/id_dtc.dir/src/server.cpp.o
  ../include/server.h
  ../include/user.h
  ../uilibgp2016/include/control/timer.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/server.cpp
+ /tmp/Dawn2289/src/server.cpp
+CMakeFiles/id_dtc.dir/src/state.cpp.o
+ ../include/state.h
+ /tmp/Dawn2289/src/state.cpp
 CMakeFiles/id_dtc.dir/src/tools.cpp.o
  ../include/tools.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/tools.cpp
+ /tmp/Dawn2289/src/tools.cpp
 CMakeFiles/id_dtc.dir/src/ui.cpp.o
  ../include/ressources.h
+ ../include/tools.h
  ../uilibgp2016/include/Lib2D.h
  ../uilibgp2016/include/control.h
  ../uilibgp2016/include/control/../control.h
@@ -2427,6 +3314,7 @@ CMakeFiles/id_dtc.dir/src/ui.cpp.o
  ../uilibgp2016/include/control/display/object/image.h
  ../uilibgp2016/include/control/display/object/label.h
  ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
  ../uilibgp2016/include/control/font.h
  ../uilibgp2016/include/control/items_classes.h
  ../uilibgp2016/include/control/rect.h
@@ -2469,84 +3357,764 @@ CMakeFiles/id_dtc.dir/src/ui.cpp.o
  ../uilibgp2016/tools/ns_macros.h
  ../uilibgp2016/tools/ns_macros.hpp
  ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/ui.cpp
+ /tmp/Dawn2289/src/ui.cpp
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o
  ../include/archer.h
+ ../include/astar.h
+ ../include/building.h
  ../include/enums.h
  ../include/info.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/ressources.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/archer.cpp
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/archer.cpp
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o
+ ../include/astar.h
+ ../include/building.h
  ../include/druide.h
  ../include/enums.h
  ../include/info.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/ressources.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/druide.cpp
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/druide.cpp
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o
+ ../include/astar.h
+ ../include/building.h
  ../include/enums.h
  ../include/info.h
  ../include/knight.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/ressources.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/knight.cpp
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/knight.cpp
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o
+ ../include/astar.h
+ ../include/building.h
  ../include/enums.h
  ../include/info.h
+ ../include/list.hpp
+ ../include/list_node.h
  ../include/mage.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/ressources.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/mage.cpp
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/mage.cpp
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o
+ ../include/astar.h
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/map.h
+ ../include/network.h
+ ../include/node.h
  ../include/peon.h
+ ../include/player.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/s_ressources.h
+ ../include/server.h
+ ../include/state.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/peon.cpp
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/image.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/peon.cpp
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o
+ ../include/astar.h
+ ../include/astar.hpp
+ ../include/buffer.h
+ ../include/buffer_size.h
+ ../include/building.h
+ ../include/case_map.h
+ ../include/client.h
  ../include/enums.h
+ ../include/env.hpp
  ../include/info.h
+ ../include/info_pos.h
+ ../include/inter.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/map.h
+ ../include/network.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/response.h
+ ../include/ressource.h
+ ../include/ressources.h
+ ../include/server.h
+ ../include/state.h
  ../include/unit.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/unit.cpp
+ ../include/user.h
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/unit.cpp
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o
+ ../include/astar.h
+ ../include/building.h
  ../include/enums.h
  ../include/info.h
+ ../include/list.hpp
+ ../include/list_node.h
+ ../include/node.h
+ ../include/point.h
+ ../include/position.h
+ ../include/ressources.h
  ../include/unit.h
  ../include/warrior.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/warrior.cpp
+ ../uilibgp2016/include/Lib2D.h
+ ../uilibgp2016/include/control.h
+ ../uilibgp2016/include/control/../control.h
+ ../uilibgp2016/include/control/../graphics/graphics.h
+ ../uilibgp2016/include/control/../window/window.h
+ ../uilibgp2016/include/control/display.h
+ ../uilibgp2016/include/control/display/../display.h
+ ../uilibgp2016/include/control/display/color.h
+ ../uilibgp2016/include/control/display/mono.h
+ ../uilibgp2016/include/control/display/mono/../../rect.h
+ ../uilibgp2016/include/control/display/mono/../../surface.h
+ ../uilibgp2016/include/control/display/mono/../../timer.h
+ ../uilibgp2016/include/control/display/mono/../color.h
+ ../uilibgp2016/include/control/display/mono/../mono.h
+ ../uilibgp2016/include/control/display/mono/../object/label.h
+ ../uilibgp2016/include/control/display/mono/button.h
+ ../uilibgp2016/include/control/display/mono/check_button.h
+ ../uilibgp2016/include/control/display/mono/label_button.h
+ ../uilibgp2016/include/control/display/mono/pictures_button.h
+ ../uilibgp2016/include/control/display/mono/textbox.h
+ ../uilibgp2016/include/control/display/mono/textbox_alpha.h
+ ../uilibgp2016/include/control/display/mono/textbox_num.h
+ ../uilibgp2016/include/control/display/mono/toggle_button.h
+ ../uilibgp2016/include/control/display/multi.h
+ ../uilibgp2016/include/control/display/multi/../multi.h
+ ../uilibgp2016/include/control/display/multi/../object/image.h
+ ../uilibgp2016/include/control/display/multi/box.h
+ ../uilibgp2016/include/control/display/multi/box/../box.h
+ ../uilibgp2016/include/control/display/multi/box/hbox.h
+ ../uilibgp2016/include/control/display/multi/box/vbox.h
+ ../uilibgp2016/include/control/display/multi/container.h
+ ../uilibgp2016/include/control/display/multi/context.h
+ ../uilibgp2016/include/control/display/multi/info_popup.h
+ ../uilibgp2016/include/control/display/multi/popup.h
+ ../uilibgp2016/include/control/display/multi/popup_m.h
+ ../uilibgp2016/include/control/display/multi/table.h
+ ../uilibgp2016/include/control/display/object.h
+ ../uilibgp2016/include/control/display/object/../../font.h
+ ../uilibgp2016/include/control/display/object/../object.h
+ ../uilibgp2016/include/control/display/object/anim.h
+ ../uilibgp2016/include/control/display/object/animation.h
+ ../uilibgp2016/include/control/display/object/blitable.h
+ ../uilibgp2016/include/control/display/object/darea.h
+ ../uilibgp2016/include/control/display/object/image.h
+ ../uilibgp2016/include/control/display/object/label.h
+ ../uilibgp2016/include/control/display/object/label_link.h
+ ../uilibgp2016/include/control/display/object/subimage.h
+ ../uilibgp2016/include/control/font.h
+ ../uilibgp2016/include/control/items_classes.h
+ ../uilibgp2016/include/control/rect.h
+ ../uilibgp2016/include/control/surface.h
+ ../uilibgp2016/include/control/timer.h
+ ../uilibgp2016/include/engine.h
+ ../uilibgp2016/include/event/event.h
+ ../uilibgp2016/include/event/events_classes.h
+ ../uilibgp2016/include/event/key_code.h
+ ../uilibgp2016/include/event/keyboard/../keyboard_event.h
+ ../uilibgp2016/include/event/keyboard/keyboard_down.h
+ ../uilibgp2016/include/event/keyboard/keyboard_up.h
+ ../uilibgp2016/include/event/keyboard_event.h
+ ../uilibgp2016/include/event/mouse/../mouse_event.h
+ ../uilibgp2016/include/event/mouse/mouse_down.h
+ ../uilibgp2016/include/event/mouse/mouse_motion.h
+ ../uilibgp2016/include/event/mouse/mouse_up.h
+ ../uilibgp2016/include/event/mouse_event.h
+ ../uilibgp2016/include/event/system/../system_event.h
+ ../uilibgp2016/include/event/system/system_active.h
+ ../uilibgp2016/include/event/system/system_context_switch.h
+ ../uilibgp2016/include/event/system/system_quit.h
+ ../uilibgp2016/include/event/system/system_resize.h
+ ../uilibgp2016/include/event/system_event.h
+ ../uilibgp2016/include/graphics/../control/display/color.h
+ ../uilibgp2016/include/graphics/../control/rect.h
+ ../uilibgp2016/include/graphics/../control/surface.h
+ ../uilibgp2016/include/graphics/graphics.h
+ ../uilibgp2016/include/signals/signal_lister.h
+ ../uilibgp2016/include/signals/signal_lister.hpp
+ ../uilibgp2016/include/signals/signal_maker.h
+ ../uilibgp2016/include/signals/signal_maker.hpp
+ ../uilibgp2016/include/sound/sound_manager.h
+ ../uilibgp2016/include/window/../control/display.h
+ ../uilibgp2016/include/window/c_gui_maker/../../control/items_classes.h
+ ../uilibgp2016/include/window/c_gui_maker/c_gui_maker.h
+ ../uilibgp2016/include/window/window.h
+ ../uilibgp2016/tools/c_buffer.h
+ ../uilibgp2016/tools/c_buffer_types.h
+ ../uilibgp2016/tools/ns_macros.h
+ ../uilibgp2016/tools/ns_macros.hpp
+ ../uilibgp2016/tools/singleton.hpp
+ /tmp/Dawn2289/src/unit/warrior.cpp
 CMakeFiles/id_dtc.dir/src/user.cpp.o
  ../include/buffer.h
+ ../include/buffer_size.h
  ../include/enums.h
  ../include/point.h
  ../include/response.h
  ../include/user.h
  ../uilibgp2016/include/control/timer.h
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/user.cpp
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o
- ../include/enums.h
- ../include/point.h
- ../include/response.h
- ../include/waiting_room.h
- ../uilibgp2016/include/control/display/../../control.h
- ../uilibgp2016/include/control/display/../../control/rect.h
- ../uilibgp2016/include/control/display/../../graphics/../control/display/color.h
- ../uilibgp2016/include/control/display/../../graphics/../control/surface.h
- ../uilibgp2016/include/control/display/../../graphics/graphics.h
- ../uilibgp2016/include/control/display/../../signals/signal_lister.h
- ../uilibgp2016/include/control/display/../../signals/signal_lister.hpp
- ../uilibgp2016/include/control/display/../../signals/signal_maker.h
- ../uilibgp2016/include/control/display/../../signals/signal_maker.hpp
- ../uilibgp2016/include/control/display/../../window/../control/display.h
- ../uilibgp2016/include/control/display/../../window/../control/rect.h
- ../uilibgp2016/include/control/display/../../window/window.h
- ../uilibgp2016/include/control/display/../display.h
- ../uilibgp2016/include/control/display/../display/color.h
- ../uilibgp2016/include/control/display/../surface.h
- ../uilibgp2016/include/control/display/multi.h
- ../uilibgp2016/include/control/display/multi/popup_m.h
- ../uilibgp2016/include/control/display/object/../../font.h
- ../uilibgp2016/include/control/display/object/../object.h
- ../uilibgp2016/include/control/display/object/label.h
- ../uilibgp2016/include/event/event.h
- ../uilibgp2016/include/event/mouse_event.h
- ../uilibgp2016/tools/ns_macros.h
- ../uilibgp2016/tools/ns_macros.hpp
- ../uilibgp2016/tools/singleton.hpp
- /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/waiting_room.cpp
+ /tmp/Dawn2289/src/user.cpp

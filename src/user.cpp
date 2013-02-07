@@ -2,14 +2,13 @@
 #include "response.h"
 #include <sys/socket.h>
 
-User::User(void): __fd(-1), __land(OTHER), __error(0)
+User::User(void): __fd(-1), __land(OTHER), __error(0), __tick(0)
 {
 	this->__timeout.start();
 }
 
 User::~User(void)
 {
-//	std::cout << "repose en paix "  << this->__fd << std::endl;
 	if (this->__fd != -1)
 		close(this->__fd);
 }
@@ -27,7 +26,6 @@ bool	User::init(const int& sckfd)
 	this->__fd = accept(sckfd, &sockaddr, &addr_len);
 	if (this->__fd == -1)
 		return false;
-//	std::cout << "bienvenue "  << this->__fd << std::endl;
 	return true;
 }
 
@@ -101,6 +99,8 @@ e_land		User::get_nation(void) const
 
 bool		User::is_ready_to_play(void) const
 {
+	if (this->__error != 0)
+		return false;
 	return this->__land != OTHER;
 }
 
@@ -112,4 +112,14 @@ void	User::set_error(int error)
 int	User::get_error(void) const
 {
 	return this->__error;
+}
+
+int	User::get_tick(void) const
+{
+	return this->__tick;
+}
+
+void	User::set_tick(int tick)
+{
+	this->__tick = tick;
 }

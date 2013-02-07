@@ -5,12 +5,14 @@
 #include "building.h"
 #include "inter.h"
 
-class   Stable : public Building
+class	Stable : public Building
 {
-	public:
-		Stable(const char*);
+public:
+		Stable(const char*, int id_player = -1);
+	virtual	~Stable(void);
+
 	bool	Init_Interface(Player* player);
-	bool	product(Lib2D::Control*, void* data);
+	bool	product(Player* player, int value, std::list<Unit*>* unit_in_construct);
 };
 
 #endif

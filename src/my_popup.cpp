@@ -6,10 +6,10 @@
 #include "ui.hpp"
 #include "ui.h"
 #include "point.h"
+#include "env.hpp"
 
 My_popup::My_popup(void)
 {
-
 }
 
 My_popup::~My_popup(void)
@@ -51,101 +51,81 @@ bool	My_popup::init_save_and_load_popupbox(Map_editor* map_editor, const char* n
 
 bool	My_popup::add_text_num(const char* txt, int x, int y)
 {
-	Lib2D::TextBox_num*	text_box;
-	Lib2D::Label*		label;
-
-	label =  new (std::nothrow) Lib2D::Label;
-	if (label == 0)
+	if (add_children(this, create_label(txt, x, y, 25, 0X00000000)) == false)
 		return false;
-	label->move(x, y);
-	if (label->init(txt, FONT, 25, 0X00000000) == false || this->add_child(label) == false)
-	{
-		delete label;
+	if (add_children(this, create_txt_box<Lib2D::TextBox_num>(80, 32, x + 100, y, 3))== false)
 		return false;
-	}
-	text_box = new (std::nothrow) Lib2D::TextBox_num;
-	if (text_box == 0)
-	{
-		delete label;
-		return false;
-	}
-	text_box->resize(80, 32);
-	text_box->move( x + 100, y);
-	if (text_box->init(FONT, 32, 3, 0xFFFFFFFF, true) == false || this->add_child(text_box) == false)
-	{
-		delete label;
-		delete text_box;
-		return false;
-	}
 	return true;
 }
 
 bool	My_popup::add_text(const char* txt, int x, int y)
 {
-	Lib2D::TextBox*		text_box;
-	Lib2D::Label*		label;
+	if (add_children(this, create_label(txt, x, y, 25, 0X000000000)) == false)
+		return false;
+	if (add_children(this, create_txt_box<Lib2D::TextBox>(80, 32, x + 100, y, -1))== false)
+		return false;
+	return true;
+}
 
-	label =  new (std::nothrow) Lib2D::Label;
-	if (label == 0)
+bool	My_popup::field(Map_editor* map_editor, info_sprite* info)
+{
+	int			x;
+	int			y(0);
+	Lib2D::Subimage*	subimage;
+	unsigned		i(0);
+
+	this->__map_editor = map_editor;
+	if (Popup_m::init("", FONT, false) == false)
 		return false;
-	label->move(x, y);
-	if (label->init(txt, FONT, 25, 0X00000000) == false || this->add_child(label) == false)
+	while (y < 20)
 	{
-		delete label;
-		return false;
-	}
-	text_box = new (std::nothrow) Lib2D::TextBox;
-	if (text_box == 0)
-	{
-		delete label;
-		return false;
-	}
-	text_box->resize(80, 32);
-	text_box->move(x + 100, y);
-	if (text_box->init(FONT, 32, -1, 0xFFFFFFFF, true) == false || this->add_child(text_box) == false)
-	{
-		delete label;
-		delete text_box;
-		return false;
+		x = 0;
+		while (x < 19)
+		{
+			subimage = new (std::nothrow) Lib2D::Subimage;
+			if (add_children(this, subimage) == false)
+				return false;
+			info[i].pos.x = x * 33;
+			info[i].pos.y = y * 33;
+			info[i].type = FIELD;
+			if (Env::get_instance()->ressource.init_subimage_sprite_field(subimage, info[i].pos, 32) == false ||
+			    subimage->signals.add(Lib2D::make_func(this->__map_editor, &Map_editor::set_sprite), 0, info + i) == false)
+				return false;
+			subimage->move(x * 32, y * 32);
+			++x;
+			++i;
+		}
+		++y;
 	}
 	return true;
 }
 
-bool	My_popup::create_sprite(Map_editor* map_editor, const std::list<info_img>& img)
+bool	My_popup::ressource(Map_editor* map_editor, info_sprite* info)
 {
-	std::list<info_img>::const_iterator	it(img.begin());
-	std::list<info_img>::const_iterator	it_end(img.end());
-	Lib2D::Image*				source;
-	Lib2D::Image*				tmp;
-	int					width(0);
-	int					height(0);
+	Point			sprite;
 
-	if (img.size() < 3)
-		return false;
 	this->__map_editor = map_editor;
-	source = img.front().img_complete;
-	while (it != it_end)
-	{
-		tmp = source->get_image_part(it->sprite_pos.x, it->sprite_pos.y, it->sprite_size.x, it->sprite_size.y);
-		if (it->sprite_pos.x + it->sprite_size.x > width)
-			width = it->sprite_pos.x + it->sprite_size.x;
-		if (it->sprite_pos.y + it->sprite_size.y > height)
-			height = it->sprite_pos.y + it->sprite_size.y;
-		if (tmp == 0)
-			return false;
-		tmp->resize(it->img_size.x, it->img_size.y);
-		tmp->move(it->sprite_pos.x, it->sprite_pos.y);
-		if (this->add_child(tmp) == 0)
-		{
-			delete tmp;
-			return false;
-		}
-		if (tmp->signals.add(Lib2D::make_func(this->__map_editor, &Map_editor::set_sprite), 0, (void*)&(*it)) == false)
-			return false;
-		++it;
-	}
-	this->resize(width, height);
 	if (Popup_m::init("", FONT, false) == false)
 		return false;
+	if (this->new_ressource(WOOD, 0, 0, info) == false ||
+	    this->new_ressource(GOLD, 64, 0, info + 1) == false ||
+	    this->new_ressource(STONE,128, 0, info + 2) == false)
+		return false;
+	return true;
+}
+
+bool	My_popup::new_ressource(e_ressource type, int x, int y, info_sprite* info)
+{
+	Lib2D::Subimage*	subimage;
+
+	info->type = RESSOURCE;
+	info->ressource = type;
+	subimage = new (std::nothrow) Lib2D::Subimage;
+	if (subimage == 0 || add_children(this, subimage) == false)
+		return false;
+	if (Env::get_instance()->ressource.init_subimage_ressource(subimage, type) == false ||
+	    subimage->signals.add(Lib2D::make_func(this->__map_editor, &Map_editor::set_sprite), 0, info) == false)
+		return false;
+	subimage->move(x, y);
 	return true;
 }

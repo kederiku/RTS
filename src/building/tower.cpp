@@ -1,9 +1,19 @@
 #include "tower.h"
 #include "ressources.h"
 
-Tower::Tower(const char* name) : Building(name, 700, 20, 18, 50)
+Tower::Tower(const char* name, int id_player) : Building(name, 700, 20, 18, 60, id_player)
 {
 	this->__type = TOWER;
+	this->__finish_pos.x = 401;
+	this->__finish_pos.y = 135;
+	this->__finish_pos.w = 58;
+	this->__finish_pos.h = 63;
+	this->__costs.wood = 200;
+	this->__costs.gold = 0;
+}
+
+Tower::~Tower(void)
+{
 }
 
 bool
@@ -22,12 +32,13 @@ Tower::Init_Interface(Player* player)
 	image[1] = NULL;
 	if (image[0] == 0)
 		return false;
-	return this->__inter->Init_Interface(image, this->__name, player, this);
+	return this->__inter->Init_Interface(image, this->__name, player, this, 0);
 }
 
-bool	Tower::product(Lib2D::Control* control, void* data)
+bool	Tower::product(Player* player, int value, std::list<Unit*>* unit_in_construct)
 {
-	(void)control;
-	(void)data;
+	(void)player;
+	(void)value;
+	(void)unit_in_construct;
 	return true;
 }

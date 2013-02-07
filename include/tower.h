@@ -7,10 +7,12 @@
 
 class	Tower : public Building
 {
-	public:
-		Tower(const char*);
-	bool	Init_Interface(Player* player);
-	bool	product(Lib2D::Control*, void* data);
+public:
+	Tower(const char*, int id_player = -1);
+	~Tower(void);
+
+	bool		Init_Interface(Player* player);
+	bool		product(Player* player, int value, std::list<Unit*>*);
 };
 
 #endif

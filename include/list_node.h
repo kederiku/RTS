@@ -10,10 +10,14 @@ namespace	id
 {
 	class	list_node: public id::list<node*>
 	{
+		std::vector<Point>	__test;
 	public:
-		void	insert(node* x);
+		list_node(void);
+
+		bool	insert(node* x);
 		bool	is_in_list(const Point& x);
 		node*	get_node(const Point& x);
+		bool	sort(node* x);
 	};
 }
 

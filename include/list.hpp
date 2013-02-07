@@ -25,6 +25,18 @@ void	clear_list(std::list<T>& list)
 	}
 }
 
+template <typename T>
+void	remove_data_list(std::list<T>& list, T data)
+{
+	typename std::list<T>::iterator		it(list.begin());
+	typename std::list<T>::iterator		it_end(list.end());
+
+	while (it != it_end && *it != data)
+		++it;
+	if (it != it_end)
+		list.erase(it);
+}
+
 namespace	id
 {
 	template <typename T>

@@ -6,8 +6,7 @@
 class	Mage : public Unit
 {
 	public:
-		Mage(const char*);
-	bool	action(void);
+		Mage(const char* name, int id_player = -1);
 };
 
 #endif

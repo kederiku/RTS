@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289
+CMAKE_SOURCE_DIR = /tmp/Dawn2289
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build
+CMAKE_BINARY_DIR = /tmp/Dawn2289/build
 
 # Utility rule file for debug.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/b
 include CMakeFiles/debug.dir/progress.make
 
 CMakeFiles/debug:
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Debugging lib2D"
 
 debug: CMakeFiles/debug
@@ -62,6 +62,6 @@ CMakeFiles/debug.dir/clean:
 .PHONY : CMakeFiles/debug.dir/clean
 
 CMakeFiles/debug.dir/depend:
-	cd /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289 /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289 /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
+	cd /tmp/Dawn2289/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/Dawn2289 /tmp/Dawn2289 /tmp/Dawn2289/build /tmp/Dawn2289/build /tmp/Dawn2289/build/CMakeFiles/debug.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/debug.dir/depend
 

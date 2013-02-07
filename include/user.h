@@ -5,9 +5,7 @@
 #include "buffer.h"
 #include "control/timer.h"
 #include "enums.h"
-
-#define SIZE_READ  100
-#define SIZE_WRITE 100
+#include "buffer_size.h"
 
 class	User
 {
@@ -17,6 +15,7 @@ class	User
 	int			__fd;
 	e_land			__land;
 	int			__error;
+	int			__tick;
 public:
 	User(void);
 	~User(void);
@@ -34,5 +33,8 @@ public:
 	bool		is_ready_to_play(void) const;
 	void		set_error(int error);
 	int		get_error(void) const;
+	int		get_tick(void) const;
+	void		set_tick(int tick);
+
 };
 #endif

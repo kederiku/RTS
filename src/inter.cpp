@@ -1,11 +1,19 @@
+#include "unit.h"
 #include "inter.h"
 #include "building.h"
 #include "ressources.h"
+#include "s_ressources.h"
 #include "player.h"
 #include "ns_var.h"
+#include "env.hpp"
+#include "tools.h"
+#include "ui.hpp"
+#include "ui.h"
 
-Inter::Inter(): Container(), value(-1), launch_product(false)
+Inter::Inter(): Container(), __id_building(0)
 {
+	this->move(750, 0);
+	this->resize(150, 800);
 }
 
 Inter::~Inter()
@@ -13,70 +21,90 @@ Inter::~Inter()
 }
 
 bool
-Inter::Init_Interface(Lib2D::Image** img, const char* name, Player* player, Building* building)
+Inter::Init_Interface(Lib2D::Image** img, const char* name, Player* player, Building* building, Unit* unit)
 {
-	this->move(750, 0);
-	this->resize(150, 800);
-	if (Head_Inter(img[0], name, building) == false)
+	Lib2D::Image	img_src;
+
+	img_src.load_bmp(ICON);
+	if (Head_Inter_Building(img[0], name, building) == false)
 		return false;
-	if (this->Init_Production(player) == false)
+	if (building->get_type() != HOUSE && building->get_type() != TOWER &&
+	    building->get_state() != BACTION && building->get_state() != BNONE &&
+	    this->Init_Production(player) == false)
 		return false;
+	this->__id_building = building;
 	if (img[1] == NULL)
 		return true;
 	img[1]->move(10, 150);
 	img[1]->resize(50, 50);
+	if (this->Add_Icon(GOLD, 150) == false || this->Add_Icon(POPU, 170) == false)
+		return false;
+	if (unit == 0)
+		return true;
+	Add_Label(unit);
+	delete unit;
 	this->add_child(img[1]);
+	return true;
+}
+
+bool
+Inter::Head_Inter_Unit(Lib2D::Image* img, const char* name, Unit* unit)
+{
+	char		hp[22];
+	unsigned	str_len;
+
+	id::itoa(unit->get_hp(), hp);
+	str_len = ns_cmc::ns_var::f_str_len(hp);
+	hp[str_len] = '/';
+	id::itoa(unit->get_hp_max(), hp + str_len + 1);
+	return this->Head_Inter(img, hp, name);
+}
+
+bool
+Inter::Head_Inter_Ressource(Lib2D::Image* img, const char* name, Ressources* ressource)
+{
+	char		hp[22];
+	unsigned	str_len;
+
+	id::itoa(ressource->get_capacity(), hp);
+	str_len = ns_cmc::ns_var::f_str_len(hp);
+	hp[str_len] = '/';
+	id::itoa(ressource->get_capacity_max(), hp + str_len + 1);
+	return this->Head_Inter(img, hp, name);
+}
+
+bool
+Inter::Head_Inter_Building(Lib2D::Image* img, const char* name, Building* building)
+{
+	char		hp[22];
+	unsigned	str_len;
+
+	id::itoa(building->get_hp(), hp);
+	str_len = ns_cmc::ns_var::f_str_len(hp);
+	hp[str_len] = '/';
+	id::itoa(building->get_hp_max(), hp + str_len + 1);
+	return this->Head_Inter(img, hp, name);
+}
+
+bool
+Inter::Head_Inter(Lib2D::Image* img, char* hp, const char* name)
+{
+	if (add_children(this, create_label(hp, 65, 50, 14, 0XCECECEFF)) == false)
+		return false;
+	if (add_children(this, create_label(name, 10, 110, 22, 0XCECECEFF)) == false)
+		return false;
+	img->move(10, 50);
+	img->resize(50,50);
+	this->add_child(img);
 	return true;
 }
 
 void
 Inter::Delete_Interface()
 {
-	std::cout << "children: " << this->children() << std::endl;
 	for (int a = this->children() -1; a > -1; a--)
 		this->del_child(a);
 	this->clean();
-	std::cout << "children: " << this->children() << std::endl;
-}
-
-bool
-Inter::Head_Inter(Lib2D::Image* img, const char* name, Building* building)
-{
-	std::cout << "pass"<< std::endl;
-	char* hp = ns_cmc::ns_var::f_itoa(building->get_hp());
-	char* hp_max = ns_cmc::ns_var::f_itoa(building->get_hp_max());
-
-	try
-	{
-		this->__name = new Lib2D::Label;
-		this->__life[0] = new Lib2D::Label;
-		this->__life[1] = new Lib2D::Label;
-		this->__life[2] = new Lib2D::Label;
-	}
-	catch(...)
-	{
-		return false;
-	}
-	img->move(10, 50);
-	img->resize(50,50);
-	this->add_child(img);
-	this->__name->move(10, 110);
-	if (this->__name->init(name, FONT, 22, 0XCECECEFF, false) == false)
-		return false;
-	this->__life[0]->move(65, 50);
-	if (this->__life[0]->init(hp, FONT, 14, 0XCECECEFF, false) == false)
-		return false;
-	this->__life[1]->move(65 + this->__life[0]->pos().w, 50);
-	if (this->__life[1]->init("/", FONT, 14, 0XCECECEFF, false) == false)
-		return false;
-	this->__life[2]->move(65 + this->__life[0]->pos().w + this->__life[1]->pos().w, 50);
-	if (this->__life[2]->init(hp_max, FONT, 14, 0XCECECEFF, false) == false)
-		return false;
-	this->add_child(this->__life[0]);
-	this->add_child(this->__life[1]);
-	this->add_child(this->__life[2]);
-	this->add_child(this->__name);
-	return true;
 }
 
 bool
@@ -131,27 +159,31 @@ Inter::Plus(Lib2D::Control* control, void* data)
 	Lib2D::TextBox_num*	txtbox = (Lib2D::TextBox_num*)control;
 	Player*			player = (Player*)data;
 	int			value = ns_cmc::ns_var::f_atoi(txtbox->get_value());
+	char			buffer[11];
 
-	if (value >= player->get_unemployed())
+	if (value >= player->get_employed_max() - player->get_unemployed())
 		return false;
-	value++;
-	txtbox->set_value(ns_cmc::ns_var::f_itoa(value));
+	++value;
+	id::itoa(value, buffer);
+	txtbox->set_value(buffer);
 	return true;
 }
 
 bool
-Inter::Minus(Lib2D::Control* control, void* data)
+Inter::Minus(Lib2D::Control* control, void*)
 {
 	Lib2D::TextBox_num*	txtbox = (Lib2D::TextBox_num*)control;
 	int			value = ns_cmc::ns_var::f_atoi(txtbox->get_value());
-	(void)data;
+	char			buffer[11];
 
-	if (value <= 1)
+	if (value < 2)
 		return false;
-	value--;
-	txtbox->set_value(ns_cmc::ns_var::f_itoa(value));
+	--value;
+	id::itoa(value, buffer);
+	txtbox->set_value(buffer);
 	return true;
 }
+
 
 bool
 Inter::Launch_product(Lib2D::Control* control, void* data)
@@ -159,13 +191,44 @@ Inter::Launch_product(Lib2D::Control* control, void* data)
 	Lib2D::TextBox_num*	txtbox = (Lib2D::TextBox_num*)control;
 	Player*			player = (Player*)data;
 	int			value = ns_cmc::ns_var::f_atoi(txtbox->get_value());
+	int			gold = 40;
 
-	if (value > player->get_unemployed() || value < 1)
+	if (value > (player->get_employed_max() - player->get_unemployed() + player->get_in_product()) || value < 1)
 		return false;
-	player->set_unemployed(-value);
-	std::cout << "Value: " << value << std::endl;
-	this->launch_product = true;
-	this->value = value;
-	//appeler product?
+	if (this->__id_building->get_product() == PEON)
+		gold = 0;
+	else if (this->__id_building->get_product() == ARCHER)
+		gold = 20;
+	if (gold * value > player->get_gold())
+		return false;
+	Env::get_instance()->client.send_unit(this->__id_building->get_id(), player->get_id_player(), value);
 	return true;
 }
+
+bool
+Inter::Add_Icon(e_ressource type, int y)
+{
+	Lib2D::Subimage*	image;
+
+	image = new (std::nothrow) Lib2D::Subimage;
+	if (image == 0 ||
+	    Env::get_instance()->ressource.init_subimage_icon_ressource(image, type) == false ||
+	    this->add_child(image) == false)
+	{
+		delete image;
+		return false;
+	}
+	image->move(65, y);
+	return true;
+}
+
+bool
+Inter::Add_Label(Unit* unit)
+{
+	if (add_children(this, create_label(unit->get_costs().gold, 90, 150, 20, 0XCECECEFF)) == false)
+		return false;
+	if (add_children(this, create_label(unit->get_costs().population, 90, 170, 20, 0XCECECEFF)) == false)
+		return false;
+	return true;
+}
+

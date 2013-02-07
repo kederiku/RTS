@@ -1,5 +1,9 @@
+#ifndef	_UI_HPP_
+#define	_UI_HPP_
+
 #include <Lib2D.h>
 #include "ressources.h"
+#include "ns_var.h"
 
 template <typename T>
 Lib2D::Button_label*	create_button_label(const char* txt, int x, int y,
@@ -18,7 +22,6 @@ Lib2D::Button_label*	create_button_label(const char* txt, int x, int y,
 		delete ret;
 		return 0;
 	}
-	ret->set_background(0x007FFFFF);
 	return ret;
 }
 
@@ -40,7 +43,7 @@ bool	add_button_label(U ctx, const char* txt, int x, int y,
 
 
 template <typename T, typename U>
-bool	add_children(T& parent, U child, bool first = false)
+bool	add_children(T parent, U child, bool first = false)
 {
 	if (child == 0)
 		return false;
@@ -64,7 +67,7 @@ bool	add_children(T& parent, U child, bool first = false)
 }
 
 template <typename T>
-T*	create_txt_box(int width, int height, int x, int y, int max_char)
+T*	create_txt_box(int width, int height, int x, int y, int max_char, int color = 0xFFFFFFFF)
 {
 	T*	ret(new (std::nothrow)T);
 
@@ -72,7 +75,7 @@ T*	create_txt_box(int width, int height, int x, int y, int max_char)
 		return 0;
 	ret->resize(width, height);
 	ret->move(x, y);
-	if (ret->init(FONT, 32, max_char) == false)
+	if (ret->init(FONT, 32, max_char, color, true) == false)
 	{
 		delete ret;
 		return 0;
@@ -87,3 +90,12 @@ bool	add_signals(bool(U::*fct)(Lib2D::Control*, void*), U* class_instance, void*
 	return T->signals.add(Lib2D::make_func(class_instance, fct), 0, data);
 }
 */
+
+template <typename U>
+bool	add_children(U child, bool first = false)
+{
+	Lib2D::Window*	window(Lib2D::Window::get_instance());
+
+	return add_children(window->get_real_context(), child, first);
+}
+#endif

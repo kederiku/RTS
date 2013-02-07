@@ -22,15 +22,15 @@ main(void)
 	Menu			menu;
 	Env*			env;
 
-	env = Env::get_instance();
-	if (env == 0)
-		return -1;
 	try
 	{
 		if (engine.init() == false)
 			return error("could not init Lib2D", engine);
 		if (engine.init_main_window(900, 800, 32, Lib2D::E_HARDWARE) == false)
 			return error("could not init main window", engine);
+		env = Env::get_instance();
+		if (env == 0)
+			return error("could not env", engine);
 		if(menu.Create_Menu() == false)
 			return -1;
 		if (engine.run() == false)

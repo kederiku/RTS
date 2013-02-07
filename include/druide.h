@@ -6,8 +6,7 @@
 class	Druide : public Unit
 {
 	public:
-		Druide(const char*);
-	bool	action(void);
+		Druide(const char* name , int id_player = -1);
 };
 
 #endif

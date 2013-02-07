@@ -1,9 +1,20 @@
 #include "house.h"
 #include "ressources.h"
+#include "player.h"
 
-House::House(const char* name) : Building(name, 750, 0, 0, 15)
+House::House(const char* name, int id_player) : Building(name, 750, 0, 0, 30, id_player)
 {
 	this->__type = HOUSE;
+	this->__finish_pos.x = 398;
+	this->__finish_pos.y = 4;
+	this->__finish_pos.w = 64;
+	this->__finish_pos.h = 64;
+	this->__costs.wood = 100;
+	this->__costs.gold = 0;
+}
+
+House::~House(void)
+{
 }
 
 bool
@@ -22,13 +33,13 @@ House::Init_Interface(Player* player)
 	image[1] = NULL;
 	if (image[0] == 0)
 		return false;
-	return this->__inter->Init_Interface(image, this->__name, player, this);
+	return this->__inter->Init_Interface(image, this->__name, player, this, 0);
 }
 
-bool	House::product(Lib2D::Control* control, void* data)
+bool	House::product(Player* player, int value, std::list<Unit*>* unit_in_construct)
 {
-	(void)control;
-	(void)data;
-	std::cout << "house\n";
+	(void)value;
+	(void)unit_in_construct;
+	player->set_employed_max(10);
 	return true;
 }

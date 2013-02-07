@@ -4,167 +4,194 @@
 #include "building.h"
 #include "house.h"
 #include "archery_range.h"
-#include "farm.h"
 #include "stable.h"
 #include "barrack.h"
 #include "tower.h"
 #include "town_center.h"
+#include "control/display/object/subimage.h"
+#include "game.h"
+#include "ns_var.h"
+#include "player.h"
+#include "tools.h"
+#include "temple.h"
+#include "academy.h"
+#include "ui.h"
+#include "ui.hpp"
 
 Interface::Interface()
 {
-}
-
-bool
-Interface::Init()
-{
-	try
-	{
-		this->__image_source = new Lib2D::Image;
-		this->__img_interface = new Lib2D::Container;
-		this->__img_gold = new Lib2D::Container;
-		this->__img_wood = new Lib2D::Container;
-		this->__img_food = new Lib2D::Container;
-		this->__img_stone= new Lib2D::Container;
-		this->__img_population= new Lib2D::Container;
-	}
-	catch(...)
-	{
-		return false;
-	}
-	if (Init_Img() == false)
-		return false;
-	return true;
-}
-
-bool
-Interface::Make_image(Lib2D::Container* container, int x, int y, int w, int h, int x2, int y2)
-{
-	Lib2D::Image*	image;
-
-	image = this->__image_source->get_image_part(x, y, w, h);
-	if (image == NULL)
-		return false;
-	image->resize(w, h);
-	image->move(x2, y2);
-	container->add_child(image);
-	return true;
-}
-
-bool
-Interface::Init_Img(void)
-{
-	if (this->__image_source->load_bmp(ICON) == false)
-		return false;
-	if (this->Make_image(this->__img_interface, 750, 0, 150, 800, 750, 0) == false ||
-	    this->Make_image(this->__img_food, 900, 0, 34, 34, 10, 10) == false ||
-	    this->Make_image(this->__img_wood, 934, 0, 34, 34, 144, 10) == false ||
-	    this->Make_image(this->__img_stone, 968, 0, 34, 34, 278, 10) == false ||
-	    this->Make_image(this->__img_gold, 1002, 0, 34, 34, 412, 10) == false ||
-	    this->Make_image(this->__img_population, 900, 34, 34, 34, 546, 10) == false)
-		return false;
-	if (Init_Building() == false)
-		return false;
-	return true;
-}
-
-bool	Interface::delete_building(int count)
-{
-	int	i = 0;
-	int	nb = 0;
-
-	while (i <= count)
-	{
-		nb = this->building[count]->children();
-		while (nb > 0)
-		{
-			this->building[count]->del_child(nb - 1);
-			nb--;
-		}
-		delete this->building[count]->building;
-		i++;
-	}
-	delete [] this->building;
-	return false;
-}
-
-bool
-Interface::Init_Building(void)
-{
-	int		i = 0;
-	int		y = 120;
-	int		x[NB_BUILDING] = {375, 425, 275, 275, 275, 475, 275};
-	int		y2[NB_BUILDING] = {0, 0, 150, 100, 200, 0, 0};
-	const char*	wood[NB_BUILDING] = {"100", "100", "200", "200", "250", "100", "250"};
-	const char*	stone[NB_BUILDING] = {"0", "0", "0", "0", "0", "150", "250"};
-	int		x1[NB_BUILDING] = {0, 68, 169, 271, 372, 476, 550};
-	int		w[NB_BUILDING] = {64, 96, 96, 96, 96, 64, 128};
-	int		h[NB_BUILDING] = {77, 70, 98, 95, 92, 105, 136};
+	unsigned	i(0);
 
 	while (i < NB_BUILDING)
 	{
-		this->building[i] = new (std::nothrow)Building_Inter();
-		if (this->building[i] == 0)
+		this->__building[i] = 0;
+		++i;
+	}
+}
+
+Interface::~Interface()
+{
+	unsigned	i(0);
+
+	while (i < NB_BUILDING)
+	{
+		delete this->__building[i];
+		++i;
+	}
+}
+
+bool	Interface::make_image(Game* game, int x, int y, int w, int h, int x2, int y2)
+{
+	Lib2D::Subimage*	img(0);
+
+	img = new (std::nothrow) Lib2D::Subimage;
+	if (img == 0 || img->init(&this->__image_source, x, y, w, h) == false || game->add_child(img) == false)
+	{
+		delete img;
+		return false;
+	}
+	img->move(x2, y2);
+	return true;
+}
+
+bool		Interface::init(Game* game, e_land nation)
+{
+	if (this->__image_source.load_bmp(ICON) == false)
+		return false;
+	this->__label_wood = create_label("0", 50, 15, 30, 0XCECECEFF);
+	if (add_children(game, this->__label_wood) == false)
+		return false;
+	this->__label_gold = create_label("0", 184, 15, 30, 0XCECECEFF);
+	if (add_children(game, this->__label_gold) == false)
+		return false;
+	this->__label_popu = create_label("0", 586, 15, 30, 0XCECECEFF);
+	if (add_children(game, this->__label_popu) == false)
+		return false;
+	if (this->make_image(game, 736, 0, 164, 800, 736, 0) == false ||
+	    this->make_image(game, 934, 0, 34, 34, 10, 10) == false ||
+	    this->make_image(game, 1002, 0, 34, 34, 144, 10) == false ||
+	    this->make_image(game, 900, 34, 34, 34, 546, 10) == false)
+		return false;
+	if (this->init_nation_interface(game, nation)  == false)
+		return false;
+	return true;
+}
+
+bool
+Interface::init_nation_interface(Game* game, e_land nation)
+{
+	e_type	type_building[NB_BUILDING] = {HOUSE, BARRACK, TOWER, ARCHERY_RANGE, STABLE, TOWN_CENTER};
+
+	switch (nation)
+	{
+		case ENGLAND:
+			type_building[1] = TEMPLE;
+			break;
+		case FRANCE:
+			break;
+		case GERMANY:
+			type_building[3] = ACADEMY;
+			break;
+		case JAPAN:
+			type_building[4] = ACADEMY;
+			break;
+		case USA:
+			type_building[3] = TEMPLE;
+			break;
+		case OTHER:
 			return false;
-		this->building[i]->move(760, y);
-		if (this->building[i]->init() == false)
-			return this->delete_building(i);
-		if (this->building[i]->Create_Container(x[i], y2[i], wood[i], stone[i], "0") == false)
-			return this->delete_building(i);
-		if (i == 0)
-			this->building[i]->building = new House("House");
-		else if (i == 1)
-			this->building[i]->building = new Farm("Farm");
-		else if (i == 2)
-			this->building[i]->building = new Barrack("Barrack");
-		else if (i == 3)
-			this->building[i]->building = new Archery_Range("Archery");
-		else if (i == 4)
-			this->building[i]->building = new Stable("Stable");
-		else if (i == 5)
-			this->building[i]->building = new Tower("Tower");
-		else if (i == 6)
-			this->building[i]->building = new Town_Center("Town Center");
-		if (this->building[i]->building == 0)
-			return this->delete_building(i);
-		this->building[i]->building->set_pos(x1[i], 0, w[i], h[i]);
+	}
+	return this->init_building(game, type_building);
+}
+
+bool
+Interface::init_building(Game* game, e_type* type_building)
+{
+	int		i = 0;
+	int		y = 120;
+	const char*	wood[NB_BUILDING] = {"100", "200", "200", "250", "100", "250"};
+	const char*	gold[NB_BUILDING] = {"0", "0", "0", "0", "150", "250"};
+
+	while (i < NB_BUILDING)
+	{
+		this->__build[i] = new (std::nothrow)Building_Inter();
+		if (this->__build[i] == 0 || this->__build[i]->init() == false ||
+		   this->__build[i]->Create_Container(wood[i], gold[i]) == false ||
+		    game->add_child(this->__build[i]) == false)
+		{
+			delete this->__build[i];
+			return false;
+		}
+		if (this->__build[i]->set_building(type_building[i]) == false)
+			return false;
+		switch (type_building[i])
+		{
+			case ACADEMY:
+				this->__building[i] = new (std::nothrow) Academy("Academy");
+				break;
+			case ARCHERY_RANGE:
+				this->__building[i] = new (std::nothrow) Archery_Range("Archery");
+				break;
+			case BARRACK:
+				this->__building[i] = new (std::nothrow) Barrack("Barrack");
+				break;
+			case HOUSE:
+				this->__building[i] = new (std::nothrow) House("House");
+				break;
+			case STABLE:
+				this->__building[i] = new (std::nothrow) Stable("Stable");
+				break;
+			case TEMPLE:
+				this->__building[i] = new (std::nothrow) Temple("Temple");
+				break;
+			case TOWER:
+				this->__building[i] = new (std::nothrow) Tower("Tower");
+				break;
+			case TOWN_CENTER:
+				this->__building[i] = new (std::nothrow) Town_Center("Town Center");
+				break;
+		}
+		if (this->__building[i] == 0 || this->__building[i]->init() == false)
+			return false;
+		if (this->__build[i]->signals.add(Lib2D::make_func(game, &Game::Create_Building), 0, this->__building[i]) == false)
+			return false;
+		this->__build[i]->move(760, y);
 		i++;
 		y += 70;
 	}
 	return true;
 }
 
-Lib2D::Container*
-Interface::Get_Img(void)
+void	Interface::set_visible_building(bool visible)
 {
-	return this->__img_interface;
+	unsigned	i(0);
+
+	while (i < NB_BUILDING)
+	{
+		this->__build[i]->visible(visible);
+		++i;
+	}
 }
 
-Lib2D::Container*
-Interface::Get_Gold_Img(void)
-{
-	return this->__img_gold;
-}
 
-Lib2D::Container*
-Interface::Get_Stone_Img(void)
+bool
+Interface::check_ressource(Player* player)
 {
-	return this->__img_stone;
-}
+	int		nb = player->get_employed_max() - player->get_unemployed();
+	char		buffer[25];
+	unsigned	str_len;
 
-Lib2D::Container*
-Interface::Get_Wood_Img(void)
-{
-	return this->__img_wood;
-}
-
-Lib2D::Container*
-Interface::Get_Food_Img(void)
-{
-	return this->__img_food;
-}
-
-Lib2D::Container*
-Interface::Get_Population_Img(void)
-{
-	return this->__img_population;
+	id::itoa(player->get_wood(), buffer);
+	if (this->__label_wood->set_label(buffer) == false)
+		return false;
+	id::itoa(player->get_gold(), buffer);
+	if (this->__label_gold->set_label(buffer) == false)
+		return false;
+	id::itoa(player->get_employed_max() - nb, buffer);
+	str_len = ns_cmc::ns_var::f_str_len(buffer);
+	buffer[str_len] = '/';
+	id::itoa(player->get_employed_max(), buffer + str_len + 1);
+	if (this->__label_popu->set_label(buffer) == false)
+		return false;
+	return true;
 }

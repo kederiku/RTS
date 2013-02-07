@@ -13,7 +13,7 @@ void*	fct_run(void* data)
 	return 0;
 }
 
-Network::Network(void): __init(false), _res(0), _sockfd(-1)
+Network::Network(void): __threads(0), __init(false), _res(0), _sockfd(-1)
 {
 }
 
@@ -44,7 +44,8 @@ bool	Network::init(const char* port, const char* ip)
 bool	Network::clear(void)
 {
 	this->__init = false;
-	pthread_join(this->__threads, 0);
+	if (this->__threads != 0)
+		pthread_join(*this->__threads, 0);
 	freeaddrinfo(this->_res);
 	if (this->_sockfd != -1)
 		close(this->_sockfd);
@@ -52,7 +53,6 @@ bool	Network::clear(void)
 	this->_sockfd = -1;
 	return false;
 }
-
 
 bool	Network::is_run(void) const
 {
@@ -66,7 +66,10 @@ void	Network::quit(void)
 
 bool	Network::create_thread(void)
 {
-	if (pthread_create(&this->__threads, NULL, &::fct_run, this) == 0)
+	this->__threads = new (std::nothrow) pthread_t;
+	if (this->__threads == 0)
+		return false;
+	if (pthread_create(this->__threads, NULL, &::fct_run, this) == 0)
 	{
 		this->__init = true;
 		return true;

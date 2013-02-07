@@ -74,6 +74,7 @@ uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./include/contr
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./include/control/display/object/../object.h
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./include/control/display/object/blitable.h
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./include/control/display/object/image.h
+uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./include/control/display/object/subimage.h
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./tools/ns_macros.h
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/blitable.cpp.o: ../uilibgp2016/./tools/singleton.hpp
@@ -128,6 +129,30 @@ uilibgp2016/CMakeFiles/2D.dir/src/button.cpp.o: ../uilibgp2016/./tools/ns_macros
 uilibgp2016/CMakeFiles/2D.dir/src/button.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/button.cpp.o: ../uilibgp2016/./tools/singleton.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/button.cpp.o: ../uilibgp2016/src/button.cpp
+
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/c_buffer.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/c_buffer_types.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/ns_var.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/./tools/ns_var.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_buffer.cpp.o: ../uilibgp2016/src/c_buffer.cpp
+
+uilibgp2016/CMakeFiles/2D.dir/src/c_dir_reader.cpp.o: ../uilibgp2016/./tools/c_dir_reader.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_dir_reader.cpp.o: ../uilibgp2016/./tools/c_dir_reader_types.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_dir_reader.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_dir_reader.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_dir_reader.cpp.o: ../uilibgp2016/src/c_dir_reader.cpp
+
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/c_buffer.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/c_buffer_types.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/c_file_reader.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/c_file_reader_types.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/ns_var.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/./tools/ns_var.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_file_reader.cpp.o: ../uilibgp2016/src/c_file_reader.cpp
 
 uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/./include/window/c_gui_maker/../../control/display/mono/../../display/color.h
 uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/./include/window/c_gui_maker/../../control/display/mono/../../rect.h
@@ -185,6 +210,13 @@ uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/./tools/ns_v
 uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/./tools/ns_var.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/./tools/singleton.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/c_gui_maker.cpp.o: ../uilibgp2016/src/c_gui_maker.cpp
+
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/./tools/c_threader.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/./tools/fc_timer.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/./tools/singleton.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/c_threader.cpp.o: ../uilibgp2016/src/c_threader.cpp
 
 uilibgp2016/CMakeFiles/2D.dir/src/check_button.cpp.o: ../uilibgp2016/./include/control/display/mono/../../display.h
 uilibgp2016/CMakeFiles/2D.dir/src/check_button.cpp.o: ../uilibgp2016/./include/control/display/mono/../../rect.h
@@ -391,6 +423,11 @@ uilibgp2016/CMakeFiles/2D.dir/src/event.cpp.o: ../uilibgp2016/./tools/ns_macros.
 uilibgp2016/CMakeFiles/2D.dir/src/event.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/event.cpp.o: ../uilibgp2016/src/event.cpp
 
+uilibgp2016/CMakeFiles/2D.dir/src/fc_timer.cpp.o: ../uilibgp2016/./tools/fc_timer.h
+uilibgp2016/CMakeFiles/2D.dir/src/fc_timer.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/fc_timer.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/fc_timer.cpp.o: ../uilibgp2016/src/fc_timer.cpp
+
 uilibgp2016/CMakeFiles/2D.dir/src/font.cpp.o: ../uilibgp2016/./include/control/font.h
 uilibgp2016/CMakeFiles/2D.dir/src/font.cpp.o: ../uilibgp2016/./tools/ns_macros.h
 uilibgp2016/CMakeFiles/2D.dir/src/font.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
@@ -416,8 +453,6 @@ uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./include/windo
 uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./include/window/window.h
 uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./tools/ns_macros.h
 uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
-uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./tools/ns_math.h
-uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./tools/ns_math.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/./tools/singleton.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/graphics.cpp.o: ../uilibgp2016/src/graphics.cpp
 
@@ -675,6 +710,12 @@ uilibgp2016/CMakeFiles/2D.dir/src/multi.cpp.o: ../uilibgp2016/./tools/ns_macros.
 uilibgp2016/CMakeFiles/2D.dir/src/multi.cpp.o: ../uilibgp2016/./tools/singleton.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/multi.cpp.o: ../uilibgp2016/src/multi.cpp
 
+uilibgp2016/CMakeFiles/2D.dir/src/ns_var.cpp.o: ../uilibgp2016/./tools/ns_macros.h
+uilibgp2016/CMakeFiles/2D.dir/src/ns_var.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/ns_var.cpp.o: ../uilibgp2016/./tools/ns_var.h
+uilibgp2016/CMakeFiles/2D.dir/src/ns_var.cpp.o: ../uilibgp2016/./tools/ns_var.hpp
+uilibgp2016/CMakeFiles/2D.dir/src/ns_var.cpp.o: ../uilibgp2016/src/ns_var.cpp
+
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/../../control.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/../../control/rect.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/../../event/event.h
@@ -692,6 +733,8 @@ uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/../display/color.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/../surface.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/control/display/object.h
+uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/event/event.h
+uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./include/event/mouse_event.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./tools/ns_macros.h
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./tools/ns_macros.hpp
 uilibgp2016/CMakeFiles/2D.dir/src/object.cpp.o: ../uilibgp2016/./tools/singleton.hpp

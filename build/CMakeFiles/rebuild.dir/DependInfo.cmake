@@ -6,7 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
   "D_SDL"
-  "SRC_DIR=\"/afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289\""
+  "SRC_DIR=\"/tmp/Dawn2289\""
   )
 
 # Targets to which this target links.

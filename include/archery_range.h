@@ -7,10 +7,12 @@
 
 class Archery_Range : public Building
 {
-	public:
-		Archery_Range(const char*);
-	bool	Init_Interface(Player* player);
-	bool	product(Lib2D::Control*, void* data);
+public:
+	Archery_Range(const char*, int id_player = -1);
+	virtual ~Archery_Range(void);
+
+	bool		Init_Interface(Player* player);
+	bool		product(Player* player, int value, std::list<Unit*>* unit_in_construct);
 };
 
 #endif

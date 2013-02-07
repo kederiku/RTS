@@ -29,16 +29,14 @@ private:
 	Lib2D::TextBox_num*	__box_nb_player;
 	Lib2D::Label_link*	__link_return;
 	Lib2D::Button_label*	__button_label_send;
-	Lib2D::Image*		__background;
-
 	Lib2D::Context*		__context_create;
 	Lib2D::Context*		__context_join;
+	bool			__create;
+	Lib2D::Popup_m*		__popup;
+	Lib2D::Context*		__context_popup;
 
-	bool		__create;
-	Lib2D::Popup_m*	__popup;
-
-	bool	create_popup(Lib2D::Context* ctx, const char* title);
-	bool	del_popup(Lib2D::Control* ctrl, void* data);
+	bool		create_popup(Lib2D::Context* ctx, const char* title);
+	bool		del_popup(Lib2D::Control* ctrl, void* data);
 };
 
 #endif

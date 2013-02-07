@@ -4,7 +4,8 @@
 namespace	id
 {
 	void	memset(void* ptr, int value, unsigned num);
-	char*   strncpy(char* str, const char* src, int size);
+	char*	strncpy(char* str, const char* src, int size);
+	void	itoa(unsigned int value, char* buf);
 }
 
 #endif

@@ -19,11 +19,20 @@ struct	Point
 	bool	operator!=(const Point& right) const;
 	bool	operator==(const Point& right) const;
 	Point&	operator=(const unsigned short int& i);
+	Point&	operator*=(const unsigned short int& i);
+	Point&	operator/=(const unsigned short int& i);
+	Point	operator*(const unsigned short int& i);
+	Point	operator/(const unsigned short int& i);
 	bool	operator!=(const unsigned short int& i) const;
 	bool	operator==(const unsigned short int& i) const;
 	bool	operator<(const unsigned short int& i) const;
 	bool	operator>(const unsigned short int& i) const;
-	void	print(void) const;
+	bool	operator<(const Point& right) const;
+	bool	operator>(const Point& right) const;
+	bool	operator<=(const Point& right) const;
+	bool	operator>=(const Point& right) const;
+	void	print(const char* debug = 0) const;
+	bool	is_next_to(const Point& right) const;
 };
 
 #endif

@@ -18,14 +18,11 @@ class	Map_editor : public Lib2D::Container
 	Lib2D::Image		__sprite_field;
 	Lib2D::Image		__sprite_ressource;
 	My_popup*		__popup;
-	Lib2D::Image*		__sprite_img;
-	info_img		__pos_img;
-	std::list<info_img>	__sprite_popup;
+	Lib2D::Subimage*	__sprite_img;
+	info_sprite*		__info;
+	info_sprite*		__sprite_list_info;
 
 	bool	add_sprite(const Lib2D::s_mouse_event* mouse_event);
-	bool	add_sprite_info(info_img& add);
-	void	init_info_img(info_img* info, int pos_x, int pos_y, int sprite_w, int sprite_h, int img_w, int img_h);
-	bool	create_popup_sprite(void);
 	bool	move_sprite(const Lib2D::s_mouse_event* mouse_event);
 public:
 	Map_editor(void);

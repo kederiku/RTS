@@ -33,13 +33,10 @@ bool	Client::init(const char* port, const char* ip)
 {
 	if (Network::init(port, ip) == false)
 		return this->clear();
-//	std::cout << "init network succes" << std::endl;
 	if (connect(this->_sockfd, this->_res->ai_addr, this->_res->ai_addrlen) == -1)
 		return this->clear();
-//	std::cout << "connect succes" << std::endl;
 	if (this->alloc_buffer() == false)
 		return this->clear();
-//	std::cout << "alloc buffer succes" << std::endl;
 	Network::set_init(true);
 	return true;
 }
@@ -48,8 +45,6 @@ bool	Client::write(void)
 {
 	int	nsend;
 
-	if (this->__buf_write.is_empty() == true)
-		return true;
 	nsend = send(this->_sockfd, this->__buf_write.get_data(), this->__buf_write.get_size(), MSG_NOSIGNAL);
 	if (nsend > 0)
 	{
@@ -66,20 +61,9 @@ bool	Client::read(void)
 
 	nrecv = recv(this->_sockfd, buf, SIZE_BUFFER_READ, MSG_NOSIGNAL);
 	if (nrecv < 1)
-	{
-//		std::cout << "j ai rien recu, c est pas normal" << std::endl;
 		return false;
-	}
 	if (this->__buf_read.get_size() + nrecv > this->__buf_read.get_capacity())
-	{
-//		std::cout << "tu rempli trop tom buffer" << std::endl;
-//		std::cout << "buffer space " << this->__buf_read.get_space() << std::endl;
-//		std::cout << "donnee recu " << nrecv << std::endl;
-//		std::cout << "buffer capa " << this->__buf_read.get_capacity() << std::endl;
-//		std::cout << "buffer size " << this->__buf_read.get_size() << std::endl;
 		return false;
-	}
-//	std::cout << "le serveur ma envoyer des chose " << nrecv << std::endl;
 	this->__buf_read.addstr(buf, nrecv);
 	return true;
 }
@@ -89,31 +73,20 @@ bool	Client::run(void)
 	bool	ret(true);
 	fd_set	fdsr;
 	fd_set	fdsw;
-	timeval	timeout;
 
-	Network::init_timeout(timeout);
 	if (Network::is_run() == false)
 		return false;
 	this->init_fd(&fdsr, &fdsw);
-	while (select(this->_sockfd + 1, &fdsr, &fdsw, 0, &timeout)  >= 0 &&
+	while (select(this->_sockfd + 1, &fdsr, &fdsw, 0, 0) >= 0 &&
 	       Network::is_run() == true && ret == true)
 	{
 		if (FD_ISSET(this->_sockfd, &fdsw))
-		{
 			ret = this->write();
-//			if (ret == false)
-//				std::cout << "je sais pas ecrire" << std::endl;
-		}
 		else if (FD_ISSET(this->_sockfd, &fdsr))
-		{
 			ret = this->read();
-//			if (ret == false)
-//				std::cout << "je sais pas lire" << std::endl;
-		}
 		if (ret == false)
 			break;
 		this->init_fd(&fdsr, &fdsw);
-		Network::init_timeout(timeout);
 	}
 	return this->clear();
 }
@@ -125,7 +98,6 @@ bool		Client::add_buffer(const char* str, unsigned int size)
 
 bool		Client::clear(void)
 {
-	std::cout << "client clear" << std::endl;
 	Network::clear();
 	this->__buf_write.clear();
 	this->__buf_read.clear();
@@ -185,4 +157,56 @@ bool	Client::update_data(void)
 			this->read();
 	}
 	return true;
+}
+
+bool	Client::send_building(const Point& pos, e_type type, int player)
+{
+	info_building	msg;
+
+	msg.pos = pos;
+	msg.id_build = type;
+	msg.player = player;
+	return this->send_to_server(&msg);
+}
+
+bool	Client::send_unit(int id_building, int id_player, int nb_product)
+{
+	info_units	msg;
+
+	msg.id_building = id_building;
+	msg.nb_product = nb_product;
+	msg.id_player = id_player;
+	return this->send_to_server(&msg);
+}
+
+
+bool	Client::unit_move(const Point& dest, unsigned id_unit, unsigned id_player)
+{
+	units_move	msg;
+
+	msg.pos = dest;
+	msg.id_unit = id_unit;
+	msg.id_player = id_player;
+	return this->send_to_server(&msg);
+}
+
+bool	Client::unit_attack(int id_player_attack, int id_player_attacked, int id_unit_attacked, int hp_to_remove, type_info info)
+{
+	units_attack	msg;
+
+	msg.hp_to_remove = hp_to_remove;
+	msg.id_player_attack = id_player_attack;
+	msg.id_player_attacked = id_player_attacked;
+	msg.id_unit_attacked = id_unit_attacked;
+	msg.info = info;
+	return this->send_to_server(&msg);
+}
+
+bool	Client::player_wins(int id_player)
+{
+	msg	message;
+
+	message.id_msg = PLAYER_WIN;
+	message.data = id_player;
+	return this->send_to_server(&message);
 }

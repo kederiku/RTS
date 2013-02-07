@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289
+CMAKE_SOURCE_DIR = /tmp/Dawn2289
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build
+CMAKE_BINARY_DIR = /tmp/Dawn2289/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/Dawn2289/build/CMakeFiles /tmp/Dawn2289/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/Dawn2289/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -273,6 +273,30 @@ src/buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/buffer.cpp.s
 .PHONY : src/buffer.cpp.s
 
+src/building/academy.o: src/building/academy.cpp.o
+.PHONY : src/building/academy.o
+
+# target to build an object file
+src/building/academy.cpp.o:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/academy.cpp.o
+.PHONY : src/building/academy.cpp.o
+
+src/building/academy.i: src/building/academy.cpp.i
+.PHONY : src/building/academy.i
+
+# target to preprocess a source file
+src/building/academy.cpp.i:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/academy.cpp.i
+.PHONY : src/building/academy.cpp.i
+
+src/building/academy.s: src/building/academy.cpp.s
+.PHONY : src/building/academy.s
+
+# target to generate assembly for a file
+src/building/academy.cpp.s:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/academy.cpp.s
+.PHONY : src/building/academy.cpp.s
+
 src/building/archery_range.o: src/building/archery_range.cpp.o
 .PHONY : src/building/archery_range.o
 
@@ -345,30 +369,6 @@ src/building/building.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/building.cpp.s
 .PHONY : src/building/building.cpp.s
 
-src/building/farm.o: src/building/farm.cpp.o
-.PHONY : src/building/farm.o
-
-# target to build an object file
-src/building/farm.cpp.o:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
-.PHONY : src/building/farm.cpp.o
-
-src/building/farm.i: src/building/farm.cpp.i
-.PHONY : src/building/farm.i
-
-# target to preprocess a source file
-src/building/farm.cpp.i:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/farm.cpp.i
-.PHONY : src/building/farm.cpp.i
-
-src/building/farm.s: src/building/farm.cpp.s
-.PHONY : src/building/farm.s
-
-# target to generate assembly for a file
-src/building/farm.cpp.s:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/farm.cpp.s
-.PHONY : src/building/farm.cpp.s
-
 src/building/house.o: src/building/house.cpp.o
 .PHONY : src/building/house.o
 
@@ -416,6 +416,30 @@ src/building/stable.s: src/building/stable.cpp.s
 src/building/stable.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/stable.cpp.s
 .PHONY : src/building/stable.cpp.s
+
+src/building/temple.o: src/building/temple.cpp.o
+.PHONY : src/building/temple.o
+
+# target to build an object file
+src/building/temple.cpp.o:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/temple.cpp.o
+.PHONY : src/building/temple.cpp.o
+
+src/building/temple.i: src/building/temple.cpp.i
+.PHONY : src/building/temple.i
+
+# target to preprocess a source file
+src/building/temple.cpp.i:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/temple.cpp.i
+.PHONY : src/building/temple.cpp.i
+
+src/building/temple.s: src/building/temple.cpp.s
+.PHONY : src/building/temple.s
+
+# target to generate assembly for a file
+src/building/temple.cpp.s:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/temple.cpp.s
+.PHONY : src/building/temple.cpp.s
 
 src/building/tower.o: src/building/tower.cpp.o
 .PHONY : src/building/tower.o
@@ -488,30 +512,6 @@ src/building_interface.s: src/building_interface.cpp.s
 src/building_interface.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building_interface.cpp.s
 .PHONY : src/building_interface.cpp.s
-
-src/callback.o: src/callback.cpp.o
-.PHONY : src/callback.o
-
-# target to build an object file
-src/callback.cpp.o:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/callback.cpp.o
-.PHONY : src/callback.cpp.o
-
-src/callback.i: src/callback.cpp.i
-.PHONY : src/callback.i
-
-# target to preprocess a source file
-src/callback.cpp.i:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/callback.cpp.i
-.PHONY : src/callback.cpp.i
-
-src/callback.s: src/callback.cpp.s
-.PHONY : src/callback.s
-
-# target to generate assembly for a file
-src/callback.cpp.s:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/callback.cpp.s
-.PHONY : src/callback.cpp.s
 
 src/case_map.o: src/case_map.cpp.o
 .PHONY : src/case_map.o
@@ -608,30 +608,6 @@ src/container_game.s: src/container_game.cpp.s
 src/container_game.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/container_game.cpp.s
 .PHONY : src/container_game.cpp.s
-
-src/create_server.o: src/create_server.cpp.o
-.PHONY : src/create_server.o
-
-# target to build an object file
-src/create_server.cpp.o:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/create_server.cpp.o
-.PHONY : src/create_server.cpp.o
-
-src/create_server.i: src/create_server.cpp.i
-.PHONY : src/create_server.i
-
-# target to preprocess a source file
-src/create_server.cpp.i:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/create_server.cpp.i
-.PHONY : src/create_server.cpp.i
-
-src/create_server.s: src/create_server.cpp.s
-.PHONY : src/create_server.s
-
-# target to generate assembly for a file
-src/create_server.cpp.s:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/create_server.cpp.s
-.PHONY : src/create_server.cpp.s
 
 src/game.o: src/game.cpp.o
 .PHONY : src/game.o
@@ -1065,6 +1041,54 @@ src/point.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/point.cpp.s
 .PHONY : src/point.cpp.s
 
+src/ressource.o: src/ressource.cpp.o
+.PHONY : src/ressource.o
+
+# target to build an object file
+src/ressource.cpp.o:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressource.cpp.o
+.PHONY : src/ressource.cpp.o
+
+src/ressource.i: src/ressource.cpp.i
+.PHONY : src/ressource.i
+
+# target to preprocess a source file
+src/ressource.cpp.i:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressource.cpp.i
+.PHONY : src/ressource.cpp.i
+
+src/ressource.s: src/ressource.cpp.s
+.PHONY : src/ressource.s
+
+# target to generate assembly for a file
+src/ressource.cpp.s:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressource.cpp.s
+.PHONY : src/ressource.cpp.s
+
+src/ressources.o: src/ressources.cpp.o
+.PHONY : src/ressources.o
+
+# target to build an object file
+src/ressources.cpp.o:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressources.cpp.o
+.PHONY : src/ressources.cpp.o
+
+src/ressources.i: src/ressources.cpp.i
+.PHONY : src/ressources.i
+
+# target to preprocess a source file
+src/ressources.cpp.i:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressources.cpp.i
+.PHONY : src/ressources.cpp.i
+
+src/ressources.s: src/ressources.cpp.s
+.PHONY : src/ressources.s
+
+# target to generate assembly for a file
+src/ressources.cpp.s:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressources.cpp.s
+.PHONY : src/ressources.cpp.s
+
 src/server.o: src/server.cpp.o
 .PHONY : src/server.o
 
@@ -1088,6 +1112,30 @@ src/server.s: src/server.cpp.s
 src/server.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
+
+src/state.o: src/state.cpp.o
+.PHONY : src/state.o
+
+# target to build an object file
+src/state.cpp.o:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/state.cpp.o
+.PHONY : src/state.cpp.o
+
+src/state.i: src/state.cpp.i
+.PHONY : src/state.i
+
+# target to preprocess a source file
+src/state.cpp.i:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/state.cpp.i
+.PHONY : src/state.cpp.i
+
+src/state.s: src/state.cpp.s
+.PHONY : src/state.s
+
+# target to generate assembly for a file
+src/state.cpp.s:
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/state.cpp.s
+.PHONY : src/state.cpp.s
 
 src/tools.o: src/tools.cpp.o
 .PHONY : src/tools.o
@@ -1329,30 +1377,6 @@ src/user.cpp.s:
 	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/user.cpp.s
 .PHONY : src/user.cpp.s
 
-src/waiting_room.o: src/waiting_room.cpp.o
-.PHONY : src/waiting_room.o
-
-# target to build an object file
-src/waiting_room.cpp.o:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o
-.PHONY : src/waiting_room.cpp.o
-
-src/waiting_room.i: src/waiting_room.cpp.i
-.PHONY : src/waiting_room.i
-
-# target to preprocess a source file
-src/waiting_room.cpp.i:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/waiting_room.cpp.i
-.PHONY : src/waiting_room.cpp.i
-
-src/waiting_room.s: src/waiting_room.cpp.s
-.PHONY : src/waiting_room.s
-
-# target to generate assembly for a file
-src/waiting_room.cpp.s:
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/waiting_room.cpp.s
-.PHONY : src/waiting_room.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1377,6 +1401,9 @@ help:
 	@echo "... src/buffer.o"
 	@echo "... src/buffer.i"
 	@echo "... src/buffer.s"
+	@echo "... src/building/academy.o"
+	@echo "... src/building/academy.i"
+	@echo "... src/building/academy.s"
 	@echo "... src/building/archery_range.o"
 	@echo "... src/building/archery_range.i"
 	@echo "... src/building/archery_range.s"
@@ -1386,15 +1413,15 @@ help:
 	@echo "... src/building/building.o"
 	@echo "... src/building/building.i"
 	@echo "... src/building/building.s"
-	@echo "... src/building/farm.o"
-	@echo "... src/building/farm.i"
-	@echo "... src/building/farm.s"
 	@echo "... src/building/house.o"
 	@echo "... src/building/house.i"
 	@echo "... src/building/house.s"
 	@echo "... src/building/stable.o"
 	@echo "... src/building/stable.i"
 	@echo "... src/building/stable.s"
+	@echo "... src/building/temple.o"
+	@echo "... src/building/temple.i"
+	@echo "... src/building/temple.s"
 	@echo "... src/building/tower.o"
 	@echo "... src/building/tower.i"
 	@echo "... src/building/tower.s"
@@ -1404,9 +1431,6 @@ help:
 	@echo "... src/building_interface.o"
 	@echo "... src/building_interface.i"
 	@echo "... src/building_interface.s"
-	@echo "... src/callback.o"
-	@echo "... src/callback.i"
-	@echo "... src/callback.s"
 	@echo "... src/case_map.o"
 	@echo "... src/case_map.i"
 	@echo "... src/case_map.s"
@@ -1419,9 +1443,6 @@ help:
 	@echo "... src/container_game.o"
 	@echo "... src/container_game.i"
 	@echo "... src/container_game.s"
-	@echo "... src/create_server.o"
-	@echo "... src/create_server.i"
-	@echo "... src/create_server.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
@@ -1476,9 +1497,18 @@ help:
 	@echo "... src/point.o"
 	@echo "... src/point.i"
 	@echo "... src/point.s"
+	@echo "... src/ressource.o"
+	@echo "... src/ressource.i"
+	@echo "... src/ressource.s"
+	@echo "... src/ressources.o"
+	@echo "... src/ressources.i"
+	@echo "... src/ressources.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
+	@echo "... src/state.o"
+	@echo "... src/state.i"
+	@echo "... src/state.s"
 	@echo "... src/tools.o"
 	@echo "... src/tools.i"
 	@echo "... src/tools.s"
@@ -1509,9 +1539,6 @@ help:
 	@echo "... src/user.o"
 	@echo "... src/user.i"
 	@echo "... src/user.s"
-	@echo "... src/waiting_room.o"
-	@echo "... src/waiting_room.i"
-	@echo "... src/waiting_room.s"
 .PHONY : help
 
 

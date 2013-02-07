@@ -6,7 +6,7 @@
 class	Archer : public Unit
 {
 	public:
-		Archer(const char*);
+		Archer(const char* name, int id_player = -1);
 };
 
 #endif

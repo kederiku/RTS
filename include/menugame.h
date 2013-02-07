@@ -15,7 +15,7 @@ private:
 	Lib2D::Popup_m*		__popup;
 
 	bool		create_popup(const char* title);
-	bool		del_popup(Lib2D::Control*, void*);
+	bool		change_context(Lib2D::Control*, void*);
 	bool		check_network(void);
 	bool		create_game(info_game*);
 public:
@@ -25,6 +25,7 @@ public:
 	bool		choose_nation(Lib2D::Control* control, void* data);
 	bool		print_nation(Lib2D::Control* control, void* data);
 	virtual bool	derived_treat_render(void);
+	void		delete_popup(void);
 };
 
 #endif

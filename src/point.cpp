@@ -83,6 +83,38 @@ Point::operator=(const unsigned short int& i)
 	return *this;
 }
 
+Point&
+Point::operator*=(const unsigned short int& i)
+{
+	this->x *= i;
+	this->y *= i;
+	return *this;
+}
+
+Point&
+Point::operator/=(const unsigned short int& i)
+{
+	this->x /= i;
+	this->y /= i;
+	return *this;
+}
+
+Point
+Point::operator*(const unsigned short int& i)
+{
+	Point	ret(this->x * i, this->y * i);
+
+	return ret;
+}
+
+Point
+Point::operator/(const unsigned short int& i)
+{
+	Point	ret(this->x / i, this->y / i);
+
+	return ret;
+}
+
 bool
 Point::operator!=(const unsigned short int& i) const
 {
@@ -107,8 +139,50 @@ Point::operator<(const unsigned short int& i) const
 	return this->x < i && this->y < i;
 }
 
-void
-Point::print(void) const
+bool
+Point::operator<(const Point& right) const
 {
-	std::cout << "x\t" << this->x << "\ty\t" << this->y << std::endl;
+	if (this->y < right.y)
+		return true;
+	else if (this->y == right.y && this->x < right.x)
+		return true;
+	return false;
+}
+
+bool
+Point::operator>(const Point& right) const
+{
+	if (this->y > right.y)
+		return true;
+	else if (this->y == right.y && this->x > right.x)
+		return true;
+	return false;
+}
+
+bool
+Point::operator<=(const Point& right) const
+{
+	if (this->y < right.y)
+		return true;
+	else if (this->y == right.y && this->x <= right.x)
+		return true;
+	return false;
+}
+
+bool
+Point::operator>=(const Point& right) const
+{
+	if (this->y > right.y)
+		return true;
+	else if (this->y == right.y && this->x >= right.x)
+		return true;
+	return false;
+}
+
+bool	Point::is_next_to(const Point& right) const
+{
+	if ((this->x -1 == right.x || this->x == right.x || this->x + 1 == right.x) &&
+	    (this->y -1 == right.y || this->y == right.y || this->y + 1 == right.y))
+		return true;
+	return false;
 }

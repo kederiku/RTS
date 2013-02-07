@@ -1,25 +1,21 @@
 #include "astar.h"
-#include "case_map.h"
+#include "map.h"
+#include "info_pos.h"
 #include <unistd.h>
 #include <stdlib.h>
 
-astar::astar(void)
+astar::astar(void): __way(0)
 {
 }
 
-void	astar::init(case_map** map, unsigned width, unsigned height)
+void	astar::init(Map* map, std::list<Point>* way, Lib2D::Control* unit)
 {
 	this->__map = map;
-	this->__width = width;
-	this->__height = height;
+	this->__way = way;
+	this->__unit = unit;
 }
 
-unsigned	astar::get_distance(const Point& begin, const Point& end)
-{
-	return 10 * (abs(end.x - begin.x) + abs(end.y - begin.y));
-}
-
-bool	astar::add_node(const Point& pos, const Point& end, node* prev, int distance)
+bool	astar::add_node(const Point& pos, const Point& end, node* prev, const int& distance)
 {
 	node*		way;
 
@@ -27,10 +23,8 @@ bool	astar::add_node(const Point& pos, const Point& end, node* prev, int distanc
 	{
 		way = new node();
 		way->pos = pos;
-		way->begin_distance = distance + 10 /*this->__map[pos.x][pos.y].cost*/;
-		if (prev != 0)
-			way->begin_distance += prev->begin_distance;
-		way->end_distance = this->get_distance(pos, end);
+		way->begin_distance = distance;
+		way->end_distance = this->__map->get_distance(pos, end);
 		way->score = way->begin_distance + way->end_distance;
 		way->prev = prev;
 		this->__open.insert(way);
@@ -42,169 +36,154 @@ bool	astar::add_node(const Point& pos, const Point& end, node* prev, int distanc
 	return true;
 }
 
-bool	astar::is_case_valide(const Point& pos, case_map* obstacle)
-{
-	if (pos.x >= this->__width || pos.y >= this->__height)
-		return false;
-	if (obstacle != 0 /*&& this->__map[pos.x] + pos.y == obstacle*/)
-		return false;
-//	if (this->__map[pos.x][pos.y].cost > 50)
-//		return false;
-	return true;
-}
-
-bool	astar::add_direction(const Point& pos, const Point& end, node* prev, int distance)
+bool	astar::add_direction(const Point& pos, const Point& end, node* prev, const int& distance)
 {
 	node*		tmp;
-	unsigned int	begin_distance(0);
+	unsigned int	begin_distance(distance);
 
-//	begin_distance = this->__map[pos.x][pos.y].cost + distance;
 	if (prev != 0)
 		begin_distance += prev->begin_distance;
 	if (this->__close.is_in_list(pos) == true)
 		return true;
 	tmp = this->__open.get_node(pos);
-	if (tmp != 0 && tmp->begin_distance <= begin_distance)
+	if (tmp != 0)
+	{
+		if (begin_distance < tmp->begin_distance)
+		{
+			tmp->begin_distance = begin_distance;
+			tmp->score = begin_distance + tmp->end_distance;
+			tmp->prev = prev;
+			return this->__open.sort(tmp);
+		}
 		return true;
-	if (this->add_node(pos, end, prev, distance) == false)
+	}
+	if (this->add_node(pos, end, prev, begin_distance) == false)
 		return false;
 	return true;
 }
 
-bool	astar::check_diagonal(const Point& pos, bool left, bool right, case_map* obstacle)
+bool	astar::search_any_direction(const Point& pos, const Point& end, node* prev)
 {
-	if (left && right && this->is_case_valide(pos, obstacle) == true)
-		return true;
-	return false;
-}
-
-bool	astar::search_any_direction(const Point& pos, const Point& end, node* prev, case_map* obstacle)
-{
-	Point		direction[4];
+	info_pos	neighbor[8];
+	unsigned	size(0);
 	unsigned	i(0);
-	bool		diagonal[5];
+	Point*		next;
 
-	direction[0].x = 0;
-	direction[0].y = -1;
-	direction[1].x = 1;
-	direction[1].y = 0;
-	direction[2].x = 0;
-	direction[2].y = 1;
-	direction[3].x = -1;
-	direction[3].y = 0;
-	while (i < 4)
+	if (this->__map->get_neighbor(pos, neighbor, size, this->__unit) == false)
+		return false;
+	while (i < size)
 	{
-		if (this->is_case_valide(pos + direction[i], obstacle) == true)
-		{
-			diagonal[i] = true;
-			if (this->add_direction(pos + direction[i], end, prev, 10) == false)
-				return false;
-		}
-		else
-			diagonal[i] = false;
-		++i;
-	}
-	diagonal[4] = diagonal[0];
-	i = 0;
-	direction[0].x = 1;
-	direction[1].y = 1;
-	direction[2].x = -1;
-	direction[3].y = -1;
-	while (i < 4)
-	{
-		if (diagonal[i] && diagonal[i + 1] && this->is_case_valide(pos + direction[i], obstacle) == true)
-		{
-			if (this->add_direction(pos + direction[i], end, prev, 14) == false)
-				return false;
-		}
+		next = neighbor + i;
+		if (this->add_direction(*next, end, prev, ((info_pos*)next)->distance) == false)
+			return false;
 		++i;
 	}
 	return true;
 }
 
-bool	astar::search_way(const Point& begin, const Point& end, case_map* obstacle)
+void	astar::search_closet_point(const position& pos, Point& ret)
+{
+	while (this->__map->is_case_valid(ret, Point(ret.x * 32, ret.y * 32), this->__unit) == false)
+	{
+		ret.y += pos.y;
+		ret.x += pos.x;
+	}
+}
+
+void	astar::get_closet_point(const Point& start, const Point& end, Point& ret)
+{
+	position	pos;
+
+	if (start.x > end.x)
+		++pos.x;
+	else if (start.x < end.x)
+		--pos.x;
+	if (start.y > end.y)
+		++pos.y;
+	else if (start.y < end.y)
+		--pos.y;
+	this->search_closet_point(pos, ret);
+}
+
+bool	astar::find_path(const Point& begin, const Point& end)
 {
 	node*	tmp;
 
-	this->clear_list();
 	if (this->add_node(begin, end, 0, 0) == false)
 		return false;
-	while (this->__open.size() != 0)
+	while (this->__open.empty() == false)
 	{
 		tmp = this->__open.front();
 		if (tmp->pos == end)
 			break;
 		this->__open.pop_front();
 		this->__close.push_back(tmp);
-		if (this->search_any_direction(tmp->pos, end, tmp, obstacle) == false)
+		if (this->search_any_direction(tmp->pos, end, tmp) == false)
 			return false;
 	}
 	return true;
 }
 
+bool	astar::search_way(const Point& begin, const Point& end)
+{
+	if (begin == end)
+		return true;
+	this->clear_list();
+	if (this->__map->is_case_valid(end, Point(end.x * 32, end.y * 32), this->__unit) == false)
+	{
+		if (this->find_path(end, begin) == false)
+			return false;
+		return this->get_way(&std::list<Point>::push_back);
+	}
+	else
+	{
+		if (this->find_path(begin, end) == false)
+			return false;
+		return this->get_way(&std::list<Point>::push_front);
+	}
+}
+
 node*	astar::get_closest_node(void)
 {
-	node*			ret;
-	id::list_node::iterator	it;
+	node*			ret(this->__close.front());
+	id::list_node::iterator	it(this->__close.begin());
+	id::list_node::iterator	it_end(this->__close.end());
 
-	ret = this->__close.front();
-	it = this->__close.begin();
-	while (it != this->__close.end())
+	while (it != it_end)
 	{
-		if ((*it)->end_distance <= ret->end_distance)
+		if ((*it)->end_distance < ret->end_distance)
 			ret = *it;
 		++it;
 	}
 	return ret;
 }
 
-bool	astar::get_way(std::list<Point>* ret, bool first)
+bool	astar::get_way(void (std::list<Point>::*push)(const Point& add))
 {
 	node*				tmp;
 	std::list<Point>::iterator	it;
 	Point				save;
 
-	if (first == true)
-		save = ret->front();
 	if (this->__open.size() > 1)
 		tmp = this->__open.front();
-	else if (this->__close.size() != 0)
+	else if (this->__close.size() > 1)
 		tmp = this->get_closest_node();
 	else
 		return true;
-	ret->clear();
-	while (tmp->prev != 0)
+	this->__way->clear();
+	try
 	{
-		ret->push_front(tmp->pos);
-		tmp = tmp->prev;
+		while (tmp->prev != 0)
+		{
+			(this->__way->*push)(tmp->pos);
+			tmp = tmp->prev;
+		}
 	}
-	if (first == true)
-		ret->push_front(save);
+	catch (std::exception&)
+	{
+		return false;
+	}
 	this->clear_list();
-	return true;
-}
-
-bool	astar::show_way(void) const
-{
-	node*				tmp;
-	std::list<Point>::iterator	it;
-	std::list<Point>		way;
-
-	if (this->__open.size() == 0)
-		tmp = this->__close.front();
-	else
-		tmp = this->__open.front();
-	while (tmp != 0)
-	{
-		way.push_front(tmp->pos);
-		tmp = tmp->prev;
-	}
-	it = way.begin();
-	while (it != way.end())
-	{
-		it->print();
-		++it;
-	}
 	return true;
 }
 

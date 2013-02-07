@@ -6,7 +6,7 @@
 class	Knight : public Unit
 {
 	public:
-		Knight(const char*);
+		Knight(const char*name , int id_player = -1);
 };
 
 #endif

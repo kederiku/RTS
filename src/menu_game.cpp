@@ -10,6 +10,7 @@
 #include "ui.h"
 
 
+
 Menugame::Menugame(void):  __nb_land(5), __is_in_game(false), __popup(0)
 {
 }
@@ -80,7 +81,6 @@ bool	Menugame::choose_nation(Lib2D::Control*, void* data)
 	Nation*				nation = (Nation*)data;
 	std::list<Nation*>::iterator	it = this->__nations.begin();
 
-//	std::cout << "nation: " << nation->get_land() << std::endl;
 	while (it != this->__nations.end())
 	{
 		(*it)->is_select = false;
@@ -107,7 +107,6 @@ bool	Menugame::derived_treat_render(void)
 	info = Env::get_instance()->client.get_msg<info_game>();
 	if (info == 0)
 		return true;
-//	std::cout << "info ready " << (int) info->ready << std::endl;
 	if (info->ready == true)
 	{
 		if (this->create_game(info) == false)
@@ -124,35 +123,34 @@ bool	Menugame::create_game(info_game* info)
 	int				nb_player = info->nb_player;
 	Player*				player[nb_player + 1];
 	int				i = 0;
-	std::list<Nation*>::iterator	it = this->__nations.begin();
+	std::list<Nation*>::iterator	it;
 
 	while (nb > 0)
 	{
 		--nb;
 		this->del_child(nb);
 	}
-	game = new (std::nothrow) Game;
 	while (i < nb_player)
 	{
 		it = this->__nations.begin();
 		while (it != this->__nations.end())
 		{
 			if (info->player[i].nation == (*it)->get_land())
+			{
+				player[i] = new (std::nothrow) Player(*it, i);
+				if (player[i] == 0)
+					return false;
 				break;
+			}
 			it++;
 		}
 		if (it == this->__nations.end())
 			return false;
-		player[i] = new (std::nothrow) Player(*it);
-		if (player[i] == 0)
-			return false;
-		if ((*it)->is_select == true)
-			player[i]->set_player();
-		this->__nations.erase(it);
 		i++;
 	}
 	player[i] = 0;
-	if (game == 0 || game->Init_game(player) == false || this->add_child(game) == false)
+	game = new (std::nothrow) Game;
+	if (game == 0 || game->Init_game(player, info->id_player) == false || this->add_child(game) == false)
 	{
 		delete game;
 		return false;
@@ -169,23 +167,24 @@ bool	Menugame::create_popup(const char* title)
 	this->__popup = new (std::nothrow) Lib2D::Popup_m;
 	if (this->__popup == 0)
 		return false;
-	this->__popup->resize(250, 250);
-	this->__popup->move(175, 175);
-	if (this->__popup->init(title, FONT, false) == false || this->add_child(this->__popup) == false)
+	if (add_children(this, this->__popup) == false)
 	{
-		delete this->__popup;
 		this->__popup = NULL;
 		return false;
 	}
-	if (add_button_label(this->__popup, "Ok", 60, 70, &Menugame::del_popup, this, 0) == false)
+	this->__popup->resize(250, 250);
+	this->__popup->move(175, 175);
+	if (this->__popup->init(title, FONT, false) == false ||
+	    add_button_label(this->__popup, "Ok", 60, 70, &Menugame::change_context, this, 0) == false)
+	{
+		this->__popup = NULL;
 		return false;
+	}
 	return true;
 }
 
-bool	Menugame::del_popup(Lib2D::Control*, void*)
+bool	Menugame::change_context(Lib2D::Control*, void*)
 {
-	this->del_child(this->__popup);
-	this->__popup = 0;
 	Lib2D::Window::get_instance()->context(0);
 	return true;
 }
@@ -207,4 +206,13 @@ bool	Menugame::check_network(void)
 	else if (Env::get_instance()->client.is_run() == false)
 		return this->create_popup("connection lost");
 	return true;
+}
+
+void	Menugame::delete_popup(void)
+{
+	if (this->__popup != 0)
+	{
+		this->del_child(this->__popup);
+		this->__popup = 0;
+	}
 }

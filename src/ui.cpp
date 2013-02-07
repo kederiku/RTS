@@ -1,14 +1,15 @@
 #include "ressources.h"
+#include "tools.h"
 #include <Lib2D.h>
 
-Lib2D::Label*	create_label(const char* txt, int x, int y, int size_police)
+Lib2D::Label*	create_label(const char* txt, int x, int y, int size_police, int color)
 {
 	Lib2D::Label*	label(new (std::nothrow)Lib2D::Label);
 
 	if (label == 0)
 		return 0;
 	label->move(x, y);
-	if (label->init(txt, FONT, size_police) == false)
+	if (label->init(txt, FONT, size_police, color) == false)
 	{
 		delete label;
 		return 0;
@@ -16,6 +17,13 @@ Lib2D::Label*	create_label(const char* txt, int x, int y, int size_police)
 	return label;
 }
 
+Lib2D::Label*	create_label(unsigned val, int x, int y, int size_police, int color)
+{
+	char	buffer[11];
+
+	id::itoa(val, buffer);
+	return create_label(buffer, x, y, size_police, color);
+}
 
 Lib2D::Image*	create_bg(const char* txt, int width, int height)
 {

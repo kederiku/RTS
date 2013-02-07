@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289
+CMAKE_SOURCE_DIR = /tmp/Dawn2289
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build
+CMAKE_BINARY_DIR = /tmp/Dawn2289/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/id_dtc.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/id_dtc.dir/flags.make
 
 CMakeFiles/id_dtc.dir/src/astar.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/astar.cpp.o: ../src/astar.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/astar.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/astar.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/astar.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/astar.cpp.o -c /tmp/Dawn2289/src/astar.cpp
 
 CMakeFiles/id_dtc.dir/src/astar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/astar.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/astar.cpp > CMakeFiles/id_dtc.dir/src/astar.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/astar.cpp > CMakeFiles/id_dtc.dir/src/astar.cpp.i
 
 CMakeFiles/id_dtc.dir/src/astar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/astar.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/astar.cpp -o CMakeFiles/id_dtc.dir/src/astar.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/astar.cpp -o CMakeFiles/id_dtc.dir/src/astar.cpp.s
 
 CMakeFiles/id_dtc.dir/src/astar.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/astar.cpp.o.requires
@@ -71,17 +71,17 @@ CMakeFiles/id_dtc.dir/src/astar.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/
 
 CMakeFiles/id_dtc.dir/src/buffer.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/buffer.cpp.o: ../src/buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/buffer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/buffer.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/buffer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/buffer.cpp.o -c /tmp/Dawn2289/src/buffer.cpp
 
 CMakeFiles/id_dtc.dir/src/buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/buffer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/buffer.cpp > CMakeFiles/id_dtc.dir/src/buffer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/buffer.cpp > CMakeFiles/id_dtc.dir/src/buffer.cpp.i
 
 CMakeFiles/id_dtc.dir/src/buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/buffer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/buffer.cpp -o CMakeFiles/id_dtc.dir/src/buffer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/buffer.cpp -o CMakeFiles/id_dtc.dir/src/buffer.cpp.s
 
 CMakeFiles/id_dtc.dir/src/buffer.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/buffer.cpp.o.requires
@@ -92,19 +92,42 @@ CMakeFiles/id_dtc.dir/src/buffer.cpp.o.provides: CMakeFiles/id_dtc.dir/src/buffe
 
 CMakeFiles/id_dtc.dir/src/buffer.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/buffer.cpp.o
 
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o: CMakeFiles/id_dtc.dir/flags.make
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o: ../src/building/academy.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/academy.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/academy.cpp.o -c /tmp/Dawn2289/src/building/academy.cpp
+
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/academy.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/academy.cpp > CMakeFiles/id_dtc.dir/src/building/academy.cpp.i
+
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/academy.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/academy.cpp -o CMakeFiles/id_dtc.dir/src/building/academy.cpp.s
+
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.requires:
+.PHONY : CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.requires
+
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.provides: CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.provides.build
+.PHONY : CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.provides
+
+CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building/academy.cpp.o
+
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o: ../src/building/archery_range.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/archery_range.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o -c /tmp/Dawn2289/src/building/archery_range.cpp
 
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/archery_range.cpp > CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/archery_range.cpp > CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/archery_range.cpp -o CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/archery_range.cpp -o CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o.requires
@@ -117,17 +140,17 @@ CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o: ../src/building/barrack.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/barrack.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o -c /tmp/Dawn2289/src/building/barrack.cpp
 
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/barrack.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/barrack.cpp > CMakeFiles/id_dtc.dir/src/building/barrack.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/barrack.cpp > CMakeFiles/id_dtc.dir/src/building/barrack.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/barrack.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/barrack.cpp -o CMakeFiles/id_dtc.dir/src/building/barrack.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/barrack.cpp -o CMakeFiles/id_dtc.dir/src/building/barrack.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o.requires
@@ -140,17 +163,17 @@ CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o.provides.build: CMakeFiles/id_d
 
 CMakeFiles/id_dtc.dir/src/building/building.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/building.cpp.o: ../src/building/building.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/building.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/building.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/building.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/building.cpp.o -c /tmp/Dawn2289/src/building/building.cpp
 
 CMakeFiles/id_dtc.dir/src/building/building.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/building.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/building.cpp > CMakeFiles/id_dtc.dir/src/building/building.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/building.cpp > CMakeFiles/id_dtc.dir/src/building/building.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/building.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/building.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/building.cpp -o CMakeFiles/id_dtc.dir/src/building/building.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/building.cpp -o CMakeFiles/id_dtc.dir/src/building/building.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/building.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/building.cpp.o.requires
@@ -161,42 +184,19 @@ CMakeFiles/id_dtc.dir/src/building/building.cpp.o.provides: CMakeFiles/id_dtc.di
 
 CMakeFiles/id_dtc.dir/src/building/building.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building/building.cpp.o
 
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o: CMakeFiles/id_dtc.dir/flags.make
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o: ../src/building/farm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/farm.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/farm.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/farm.cpp
-
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/farm.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/farm.cpp > CMakeFiles/id_dtc.dir/src/building/farm.cpp.i
-
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/farm.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/farm.cpp -o CMakeFiles/id_dtc.dir/src/building/farm.cpp.s
-
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.requires:
-.PHONY : CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.requires
-
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.provides: CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.requires
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.provides.build
-.PHONY : CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.provides
-
-CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
-
 CMakeFiles/id_dtc.dir/src/building/house.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/house.cpp.o: ../src/building/house.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/house.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/house.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/house.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/house.cpp.o -c /tmp/Dawn2289/src/building/house.cpp
 
 CMakeFiles/id_dtc.dir/src/building/house.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/house.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/house.cpp > CMakeFiles/id_dtc.dir/src/building/house.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/house.cpp > CMakeFiles/id_dtc.dir/src/building/house.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/house.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/house.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/house.cpp -o CMakeFiles/id_dtc.dir/src/building/house.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/house.cpp -o CMakeFiles/id_dtc.dir/src/building/house.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/house.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/house.cpp.o.requires
@@ -209,17 +209,17 @@ CMakeFiles/id_dtc.dir/src/building/house.cpp.o.provides.build: CMakeFiles/id_dtc
 
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.o: ../src/building/stable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/stable.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/stable.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/stable.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/stable.cpp.o -c /tmp/Dawn2289/src/building/stable.cpp
 
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/stable.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/stable.cpp > CMakeFiles/id_dtc.dir/src/building/stable.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/stable.cpp > CMakeFiles/id_dtc.dir/src/building/stable.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/stable.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/stable.cpp -o CMakeFiles/id_dtc.dir/src/building/stable.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/stable.cpp -o CMakeFiles/id_dtc.dir/src/building/stable.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/stable.cpp.o.requires
@@ -230,19 +230,42 @@ CMakeFiles/id_dtc.dir/src/building/stable.cpp.o.provides: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/building/stable.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building/stable.cpp.o
 
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o: CMakeFiles/id_dtc.dir/flags.make
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o: ../src/building/temple.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/temple.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/temple.cpp.o -c /tmp/Dawn2289/src/building/temple.cpp
+
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/temple.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/temple.cpp > CMakeFiles/id_dtc.dir/src/building/temple.cpp.i
+
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/temple.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/temple.cpp -o CMakeFiles/id_dtc.dir/src/building/temple.cpp.s
+
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.requires:
+.PHONY : CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.requires
+
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.provides: CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.requires
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.provides.build
+.PHONY : CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.provides
+
+CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building/temple.cpp.o
+
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.o: ../src/building/tower.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/tower.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/tower.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/tower.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/tower.cpp.o -c /tmp/Dawn2289/src/building/tower.cpp
 
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/tower.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/tower.cpp > CMakeFiles/id_dtc.dir/src/building/tower.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/tower.cpp > CMakeFiles/id_dtc.dir/src/building/tower.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/tower.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/tower.cpp -o CMakeFiles/id_dtc.dir/src/building/tower.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/tower.cpp -o CMakeFiles/id_dtc.dir/src/building/tower.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/tower.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/tower.cpp.o.requires
@@ -255,17 +278,17 @@ CMakeFiles/id_dtc.dir/src/building/tower.cpp.o.provides.build: CMakeFiles/id_dtc
 
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o: ../src/building/town_center.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/town_center.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o -c /tmp/Dawn2289/src/building/town_center.cpp
 
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building/town_center.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/town_center.cpp > CMakeFiles/id_dtc.dir/src/building/town_center.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building/town_center.cpp > CMakeFiles/id_dtc.dir/src/building/town_center.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building/town_center.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building/town_center.cpp -o CMakeFiles/id_dtc.dir/src/building/town_center.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building/town_center.cpp -o CMakeFiles/id_dtc.dir/src/building/town_center.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o.requires
@@ -278,17 +301,17 @@ CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.o: ../src/building_interface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/building_interface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building_interface.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building_interface.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/building_interface.cpp.o -c /tmp/Dawn2289/src/building_interface.cpp
 
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/building_interface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building_interface.cpp > CMakeFiles/id_dtc.dir/src/building_interface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/building_interface.cpp > CMakeFiles/id_dtc.dir/src/building_interface.cpp.i
 
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/building_interface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/building_interface.cpp -o CMakeFiles/id_dtc.dir/src/building_interface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/building_interface.cpp -o CMakeFiles/id_dtc.dir/src/building_interface.cpp.s
 
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/building_interface.cpp.o.requires
@@ -299,42 +322,19 @@ CMakeFiles/id_dtc.dir/src/building_interface.cpp.o.provides: CMakeFiles/id_dtc.d
 
 CMakeFiles/id_dtc.dir/src/building_interface.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/building_interface.cpp.o
 
-CMakeFiles/id_dtc.dir/src/callback.cpp.o: CMakeFiles/id_dtc.dir/flags.make
-CMakeFiles/id_dtc.dir/src/callback.cpp.o: ../src/callback.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/callback.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/callback.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/callback.cpp
-
-CMakeFiles/id_dtc.dir/src/callback.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/callback.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/callback.cpp > CMakeFiles/id_dtc.dir/src/callback.cpp.i
-
-CMakeFiles/id_dtc.dir/src/callback.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/callback.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/callback.cpp -o CMakeFiles/id_dtc.dir/src/callback.cpp.s
-
-CMakeFiles/id_dtc.dir/src/callback.cpp.o.requires:
-.PHONY : CMakeFiles/id_dtc.dir/src/callback.cpp.o.requires
-
-CMakeFiles/id_dtc.dir/src/callback.cpp.o.provides: CMakeFiles/id_dtc.dir/src/callback.cpp.o.requires
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/callback.cpp.o.provides.build
-.PHONY : CMakeFiles/id_dtc.dir/src/callback.cpp.o.provides
-
-CMakeFiles/id_dtc.dir/src/callback.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/callback.cpp.o
-
 CMakeFiles/id_dtc.dir/src/case_map.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/case_map.cpp.o: ../src/case_map.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/case_map.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/case_map.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/case_map.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/case_map.cpp.o -c /tmp/Dawn2289/src/case_map.cpp
 
 CMakeFiles/id_dtc.dir/src/case_map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/case_map.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/case_map.cpp > CMakeFiles/id_dtc.dir/src/case_map.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/case_map.cpp > CMakeFiles/id_dtc.dir/src/case_map.cpp.i
 
 CMakeFiles/id_dtc.dir/src/case_map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/case_map.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/case_map.cpp -o CMakeFiles/id_dtc.dir/src/case_map.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/case_map.cpp -o CMakeFiles/id_dtc.dir/src/case_map.cpp.s
 
 CMakeFiles/id_dtc.dir/src/case_map.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/case_map.cpp.o.requires
@@ -347,17 +347,17 @@ CMakeFiles/id_dtc.dir/src/case_map.cpp.o.provides.build: CMakeFiles/id_dtc.dir/s
 
 CMakeFiles/id_dtc.dir/src/client.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/client.cpp.o: ../src/client.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/client.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/client.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/client.cpp.o -c /tmp/Dawn2289/src/client.cpp
 
 CMakeFiles/id_dtc.dir/src/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/client.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/client.cpp > CMakeFiles/id_dtc.dir/src/client.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/client.cpp > CMakeFiles/id_dtc.dir/src/client.cpp.i
 
 CMakeFiles/id_dtc.dir/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/client.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/client.cpp -o CMakeFiles/id_dtc.dir/src/client.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/client.cpp -o CMakeFiles/id_dtc.dir/src/client.cpp.s
 
 CMakeFiles/id_dtc.dir/src/client.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/client.cpp.o.requires
@@ -370,17 +370,17 @@ CMakeFiles/id_dtc.dir/src/client.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src
 
 CMakeFiles/id_dtc.dir/src/connection.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/connection.cpp.o: ../src/connection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/connection.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/connection.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/connection.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/connection.cpp.o -c /tmp/Dawn2289/src/connection.cpp
 
 CMakeFiles/id_dtc.dir/src/connection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/connection.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/connection.cpp > CMakeFiles/id_dtc.dir/src/connection.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/connection.cpp > CMakeFiles/id_dtc.dir/src/connection.cpp.i
 
 CMakeFiles/id_dtc.dir/src/connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/connection.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/connection.cpp -o CMakeFiles/id_dtc.dir/src/connection.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/connection.cpp -o CMakeFiles/id_dtc.dir/src/connection.cpp.s
 
 CMakeFiles/id_dtc.dir/src/connection.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/connection.cpp.o.requires
@@ -393,17 +393,17 @@ CMakeFiles/id_dtc.dir/src/connection.cpp.o.provides.build: CMakeFiles/id_dtc.dir
 
 CMakeFiles/id_dtc.dir/src/container_game.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/container_game.cpp.o: ../src/container_game.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/container_game.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/container_game.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/container_game.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/container_game.cpp.o -c /tmp/Dawn2289/src/container_game.cpp
 
 CMakeFiles/id_dtc.dir/src/container_game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/container_game.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/container_game.cpp > CMakeFiles/id_dtc.dir/src/container_game.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/container_game.cpp > CMakeFiles/id_dtc.dir/src/container_game.cpp.i
 
 CMakeFiles/id_dtc.dir/src/container_game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/container_game.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/container_game.cpp -o CMakeFiles/id_dtc.dir/src/container_game.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/container_game.cpp -o CMakeFiles/id_dtc.dir/src/container_game.cpp.s
 
 CMakeFiles/id_dtc.dir/src/container_game.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/container_game.cpp.o.requires
@@ -414,42 +414,19 @@ CMakeFiles/id_dtc.dir/src/container_game.cpp.o.provides: CMakeFiles/id_dtc.dir/s
 
 CMakeFiles/id_dtc.dir/src/container_game.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/container_game.cpp.o
 
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o: CMakeFiles/id_dtc.dir/flags.make
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o: ../src/create_server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/create_server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/create_server.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/create_server.cpp
-
-CMakeFiles/id_dtc.dir/src/create_server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/create_server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/create_server.cpp > CMakeFiles/id_dtc.dir/src/create_server.cpp.i
-
-CMakeFiles/id_dtc.dir/src/create_server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/create_server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/create_server.cpp -o CMakeFiles/id_dtc.dir/src/create_server.cpp.s
-
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o.requires:
-.PHONY : CMakeFiles/id_dtc.dir/src/create_server.cpp.o.requires
-
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o.provides: CMakeFiles/id_dtc.dir/src/create_server.cpp.o.requires
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/create_server.cpp.o.provides.build
-.PHONY : CMakeFiles/id_dtc.dir/src/create_server.cpp.o.provides
-
-CMakeFiles/id_dtc.dir/src/create_server.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/create_server.cpp.o
-
 CMakeFiles/id_dtc.dir/src/game.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/game.cpp.o: ../src/game.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/game.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/game.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/game.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/game.cpp.o -c /tmp/Dawn2289/src/game.cpp
 
 CMakeFiles/id_dtc.dir/src/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/game.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/game.cpp > CMakeFiles/id_dtc.dir/src/game.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/game.cpp > CMakeFiles/id_dtc.dir/src/game.cpp.i
 
 CMakeFiles/id_dtc.dir/src/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/game.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/game.cpp -o CMakeFiles/id_dtc.dir/src/game.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/game.cpp -o CMakeFiles/id_dtc.dir/src/game.cpp.s
 
 CMakeFiles/id_dtc.dir/src/game.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/game.cpp.o.requires
@@ -460,19 +437,42 @@ CMakeFiles/id_dtc.dir/src/game.cpp.o.provides: CMakeFiles/id_dtc.dir/src/game.cp
 
 CMakeFiles/id_dtc.dir/src/game.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/game.cpp.o
 
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o: CMakeFiles/id_dtc.dir/flags.make
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o: ../src/ressource.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/ressource.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/ressource.cpp.o -c /tmp/Dawn2289/src/ressource.cpp
+
+CMakeFiles/id_dtc.dir/src/ressource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/ressource.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/ressource.cpp > CMakeFiles/id_dtc.dir/src/ressource.cpp.i
+
+CMakeFiles/id_dtc.dir/src/ressource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/ressource.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/ressource.cpp -o CMakeFiles/id_dtc.dir/src/ressource.cpp.s
+
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o.requires:
+.PHONY : CMakeFiles/id_dtc.dir/src/ressource.cpp.o.requires
+
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o.provides: CMakeFiles/id_dtc.dir/src/ressource.cpp.o.requires
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressource.cpp.o.provides.build
+.PHONY : CMakeFiles/id_dtc.dir/src/ressource.cpp.o.provides
+
+CMakeFiles/id_dtc.dir/src/ressource.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/ressource.cpp.o
+
 CMakeFiles/id_dtc.dir/src/info.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/info.cpp.o: ../src/info.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/info.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/info.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/info.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/info.cpp.o -c /tmp/Dawn2289/src/info.cpp
 
 CMakeFiles/id_dtc.dir/src/info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/info.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/info.cpp > CMakeFiles/id_dtc.dir/src/info.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/info.cpp > CMakeFiles/id_dtc.dir/src/info.cpp.i
 
 CMakeFiles/id_dtc.dir/src/info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/info.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/info.cpp -o CMakeFiles/id_dtc.dir/src/info.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/info.cpp -o CMakeFiles/id_dtc.dir/src/info.cpp.s
 
 CMakeFiles/id_dtc.dir/src/info.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/info.cpp.o.requires
@@ -485,17 +485,17 @@ CMakeFiles/id_dtc.dir/src/info.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/i
 
 CMakeFiles/id_dtc.dir/src/interface.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/interface.cpp.o: ../src/interface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/interface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/interface.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/interface.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/interface.cpp.o -c /tmp/Dawn2289/src/interface.cpp
 
 CMakeFiles/id_dtc.dir/src/interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/interface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/interface.cpp > CMakeFiles/id_dtc.dir/src/interface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/interface.cpp > CMakeFiles/id_dtc.dir/src/interface.cpp.i
 
 CMakeFiles/id_dtc.dir/src/interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/interface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/interface.cpp -o CMakeFiles/id_dtc.dir/src/interface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/interface.cpp -o CMakeFiles/id_dtc.dir/src/interface.cpp.s
 
 CMakeFiles/id_dtc.dir/src/interface.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/interface.cpp.o.requires
@@ -508,17 +508,17 @@ CMakeFiles/id_dtc.dir/src/interface.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/list_node.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/list_node.cpp.o: ../src/list_node.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/list_node.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/list_node.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/list_node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/list_node.cpp.o -c /tmp/Dawn2289/src/list_node.cpp
 
 CMakeFiles/id_dtc.dir/src/list_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/list_node.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/list_node.cpp > CMakeFiles/id_dtc.dir/src/list_node.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/list_node.cpp > CMakeFiles/id_dtc.dir/src/list_node.cpp.i
 
 CMakeFiles/id_dtc.dir/src/list_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/list_node.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/list_node.cpp -o CMakeFiles/id_dtc.dir/src/list_node.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/list_node.cpp -o CMakeFiles/id_dtc.dir/src/list_node.cpp.s
 
 CMakeFiles/id_dtc.dir/src/list_node.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/list_node.cpp.o.requires
@@ -531,17 +531,17 @@ CMakeFiles/id_dtc.dir/src/list_node.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/main.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/main.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/main.cpp.o -c /tmp/Dawn2289/src/main.cpp
 
 CMakeFiles/id_dtc.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/main.cpp > CMakeFiles/id_dtc.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/main.cpp > CMakeFiles/id_dtc.dir/src/main.cpp.i
 
 CMakeFiles/id_dtc.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/main.cpp -o CMakeFiles/id_dtc.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/main.cpp -o CMakeFiles/id_dtc.dir/src/main.cpp.s
 
 CMakeFiles/id_dtc.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/main.cpp.o.requires
@@ -554,17 +554,17 @@ CMakeFiles/id_dtc.dir/src/main.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/m
 
 CMakeFiles/id_dtc.dir/src/map.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/map.cpp.o: ../src/map.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/map.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/map.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/map.cpp.o -c /tmp/Dawn2289/src/map.cpp
 
 CMakeFiles/id_dtc.dir/src/map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/map.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map.cpp > CMakeFiles/id_dtc.dir/src/map.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/map.cpp > CMakeFiles/id_dtc.dir/src/map.cpp.i
 
 CMakeFiles/id_dtc.dir/src/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/map.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map.cpp -o CMakeFiles/id_dtc.dir/src/map.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/map.cpp -o CMakeFiles/id_dtc.dir/src/map.cpp.s
 
 CMakeFiles/id_dtc.dir/src/map.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/map.cpp.o.requires
@@ -577,17 +577,17 @@ CMakeFiles/id_dtc.dir/src/map.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/ma
 
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.o: ../src/map_editor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/map_editor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/map_editor.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map_editor.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/map_editor.cpp.o -c /tmp/Dawn2289/src/map_editor.cpp
 
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/map_editor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map_editor.cpp > CMakeFiles/id_dtc.dir/src/map_editor.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/map_editor.cpp > CMakeFiles/id_dtc.dir/src/map_editor.cpp.i
 
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/map_editor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/map_editor.cpp -o CMakeFiles/id_dtc.dir/src/map_editor.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/map_editor.cpp -o CMakeFiles/id_dtc.dir/src/map_editor.cpp.s
 
 CMakeFiles/id_dtc.dir/src/map_editor.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/map_editor.cpp.o.requires
@@ -600,17 +600,17 @@ CMakeFiles/id_dtc.dir/src/map_editor.cpp.o.provides.build: CMakeFiles/id_dtc.dir
 
 CMakeFiles/id_dtc.dir/src/menu.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/menu.cpp.o: ../src/menu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/menu.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/menu.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/menu.cpp.o -c /tmp/Dawn2289/src/menu.cpp
 
 CMakeFiles/id_dtc.dir/src/menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/menu.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu.cpp > CMakeFiles/id_dtc.dir/src/menu.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/menu.cpp > CMakeFiles/id_dtc.dir/src/menu.cpp.i
 
 CMakeFiles/id_dtc.dir/src/menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/menu.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu.cpp -o CMakeFiles/id_dtc.dir/src/menu.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/menu.cpp -o CMakeFiles/id_dtc.dir/src/menu.cpp.s
 
 CMakeFiles/id_dtc.dir/src/menu.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/menu.cpp.o.requires
@@ -623,17 +623,17 @@ CMakeFiles/id_dtc.dir/src/menu.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/m
 
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.o: ../src/menu_game.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/menu_game.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/menu_game.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu_game.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/menu_game.cpp.o -c /tmp/Dawn2289/src/menu_game.cpp
 
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/menu_game.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu_game.cpp > CMakeFiles/id_dtc.dir/src/menu_game.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/menu_game.cpp > CMakeFiles/id_dtc.dir/src/menu_game.cpp.i
 
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/menu_game.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/menu_game.cpp -o CMakeFiles/id_dtc.dir/src/menu_game.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/menu_game.cpp -o CMakeFiles/id_dtc.dir/src/menu_game.cpp.s
 
 CMakeFiles/id_dtc.dir/src/menu_game.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/menu_game.cpp.o.requires
@@ -646,17 +646,17 @@ CMakeFiles/id_dtc.dir/src/menu_game.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/mutex.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/mutex.cpp.o: ../src/mutex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/mutex.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/mutex.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/mutex.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/mutex.cpp.o -c /tmp/Dawn2289/src/mutex.cpp
 
 CMakeFiles/id_dtc.dir/src/mutex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/mutex.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/mutex.cpp > CMakeFiles/id_dtc.dir/src/mutex.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/mutex.cpp > CMakeFiles/id_dtc.dir/src/mutex.cpp.i
 
 CMakeFiles/id_dtc.dir/src/mutex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/mutex.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/mutex.cpp -o CMakeFiles/id_dtc.dir/src/mutex.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/mutex.cpp -o CMakeFiles/id_dtc.dir/src/mutex.cpp.s
 
 CMakeFiles/id_dtc.dir/src/mutex.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/mutex.cpp.o.requires
@@ -669,17 +669,17 @@ CMakeFiles/id_dtc.dir/src/mutex.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/
 
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.o: ../src/my_popup.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/my_popup.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/my_popup.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/my_popup.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/my_popup.cpp.o -c /tmp/Dawn2289/src/my_popup.cpp
 
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/my_popup.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/my_popup.cpp > CMakeFiles/id_dtc.dir/src/my_popup.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/my_popup.cpp > CMakeFiles/id_dtc.dir/src/my_popup.cpp.i
 
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/my_popup.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/my_popup.cpp -o CMakeFiles/id_dtc.dir/src/my_popup.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/my_popup.cpp -o CMakeFiles/id_dtc.dir/src/my_popup.cpp.s
 
 CMakeFiles/id_dtc.dir/src/my_popup.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/my_popup.cpp.o.requires
@@ -692,17 +692,17 @@ CMakeFiles/id_dtc.dir/src/my_popup.cpp.o.provides.build: CMakeFiles/id_dtc.dir/s
 
 CMakeFiles/id_dtc.dir/src/nation.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/nation.cpp.o: ../src/nation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/nation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/nation.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/nation.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/nation.cpp.o -c /tmp/Dawn2289/src/nation.cpp
 
 CMakeFiles/id_dtc.dir/src/nation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/nation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/nation.cpp > CMakeFiles/id_dtc.dir/src/nation.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/nation.cpp > CMakeFiles/id_dtc.dir/src/nation.cpp.i
 
 CMakeFiles/id_dtc.dir/src/nation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/nation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/nation.cpp -o CMakeFiles/id_dtc.dir/src/nation.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/nation.cpp -o CMakeFiles/id_dtc.dir/src/nation.cpp.s
 
 CMakeFiles/id_dtc.dir/src/nation.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/nation.cpp.o.requires
@@ -715,17 +715,17 @@ CMakeFiles/id_dtc.dir/src/nation.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src
 
 CMakeFiles/id_dtc.dir/src/network.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/network.cpp.o: ../src/network.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/network.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/network.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/network.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/network.cpp.o -c /tmp/Dawn2289/src/network.cpp
 
 CMakeFiles/id_dtc.dir/src/network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/network.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/network.cpp > CMakeFiles/id_dtc.dir/src/network.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/network.cpp > CMakeFiles/id_dtc.dir/src/network.cpp.i
 
 CMakeFiles/id_dtc.dir/src/network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/network.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/network.cpp -o CMakeFiles/id_dtc.dir/src/network.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/network.cpp -o CMakeFiles/id_dtc.dir/src/network.cpp.s
 
 CMakeFiles/id_dtc.dir/src/network.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/network.cpp.o.requires
@@ -738,17 +738,17 @@ CMakeFiles/id_dtc.dir/src/network.cpp.o.provides.build: CMakeFiles/id_dtc.dir/sr
 
 CMakeFiles/id_dtc.dir/src/node.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/node.cpp.o: ../src/node.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/node.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/node.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/node.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/node.cpp.o -c /tmp/Dawn2289/src/node.cpp
 
 CMakeFiles/id_dtc.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/node.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/node.cpp > CMakeFiles/id_dtc.dir/src/node.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/node.cpp > CMakeFiles/id_dtc.dir/src/node.cpp.i
 
 CMakeFiles/id_dtc.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/node.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/node.cpp -o CMakeFiles/id_dtc.dir/src/node.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/node.cpp -o CMakeFiles/id_dtc.dir/src/node.cpp.s
 
 CMakeFiles/id_dtc.dir/src/node.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/node.cpp.o.requires
@@ -761,17 +761,17 @@ CMakeFiles/id_dtc.dir/src/node.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/n
 
 CMakeFiles/id_dtc.dir/src/player.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/player.cpp.o: ../src/player.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/player.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/player.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/player.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/player.cpp.o -c /tmp/Dawn2289/src/player.cpp
 
 CMakeFiles/id_dtc.dir/src/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/player.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/player.cpp > CMakeFiles/id_dtc.dir/src/player.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/player.cpp > CMakeFiles/id_dtc.dir/src/player.cpp.i
 
 CMakeFiles/id_dtc.dir/src/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/player.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/player.cpp -o CMakeFiles/id_dtc.dir/src/player.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/player.cpp -o CMakeFiles/id_dtc.dir/src/player.cpp.s
 
 CMakeFiles/id_dtc.dir/src/player.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/player.cpp.o.requires
@@ -784,17 +784,17 @@ CMakeFiles/id_dtc.dir/src/player.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src
 
 CMakeFiles/id_dtc.dir/src/point.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/point.cpp.o: ../src/point.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/point.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/point.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/point.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/point.cpp.o -c /tmp/Dawn2289/src/point.cpp
 
 CMakeFiles/id_dtc.dir/src/point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/point.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/point.cpp > CMakeFiles/id_dtc.dir/src/point.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/point.cpp > CMakeFiles/id_dtc.dir/src/point.cpp.i
 
 CMakeFiles/id_dtc.dir/src/point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/point.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/point.cpp -o CMakeFiles/id_dtc.dir/src/point.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/point.cpp -o CMakeFiles/id_dtc.dir/src/point.cpp.s
 
 CMakeFiles/id_dtc.dir/src/point.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/point.cpp.o.requires
@@ -807,17 +807,17 @@ CMakeFiles/id_dtc.dir/src/point.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/
 
 CMakeFiles/id_dtc.dir/src/server.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/server.cpp.o: ../src/server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/server.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/server.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/server.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/server.cpp.o -c /tmp/Dawn2289/src/server.cpp
 
 CMakeFiles/id_dtc.dir/src/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/server.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/server.cpp > CMakeFiles/id_dtc.dir/src/server.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/server.cpp > CMakeFiles/id_dtc.dir/src/server.cpp.i
 
 CMakeFiles/id_dtc.dir/src/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/server.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/server.cpp -o CMakeFiles/id_dtc.dir/src/server.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/server.cpp -o CMakeFiles/id_dtc.dir/src/server.cpp.s
 
 CMakeFiles/id_dtc.dir/src/server.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/server.cpp.o.requires
@@ -828,19 +828,65 @@ CMakeFiles/id_dtc.dir/src/server.cpp.o.provides: CMakeFiles/id_dtc.dir/src/serve
 
 CMakeFiles/id_dtc.dir/src/server.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/server.cpp.o
 
+CMakeFiles/id_dtc.dir/src/state.cpp.o: CMakeFiles/id_dtc.dir/flags.make
+CMakeFiles/id_dtc.dir/src/state.cpp.o: ../src/state.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/state.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/state.cpp.o -c /tmp/Dawn2289/src/state.cpp
+
+CMakeFiles/id_dtc.dir/src/state.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/state.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/state.cpp > CMakeFiles/id_dtc.dir/src/state.cpp.i
+
+CMakeFiles/id_dtc.dir/src/state.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/state.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/state.cpp -o CMakeFiles/id_dtc.dir/src/state.cpp.s
+
+CMakeFiles/id_dtc.dir/src/state.cpp.o.requires:
+.PHONY : CMakeFiles/id_dtc.dir/src/state.cpp.o.requires
+
+CMakeFiles/id_dtc.dir/src/state.cpp.o.provides: CMakeFiles/id_dtc.dir/src/state.cpp.o.requires
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/state.cpp.o.provides.build
+.PHONY : CMakeFiles/id_dtc.dir/src/state.cpp.o.provides
+
+CMakeFiles/id_dtc.dir/src/state.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/state.cpp.o
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o: CMakeFiles/id_dtc.dir/flags.make
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o: ../src/ressources.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/ressources.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/ressources.cpp.o -c /tmp/Dawn2289/src/ressources.cpp
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/ressources.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/ressources.cpp > CMakeFiles/id_dtc.dir/src/ressources.cpp.i
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/ressources.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/ressources.cpp -o CMakeFiles/id_dtc.dir/src/ressources.cpp.s
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o.requires:
+.PHONY : CMakeFiles/id_dtc.dir/src/ressources.cpp.o.requires
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o.provides: CMakeFiles/id_dtc.dir/src/ressources.cpp.o.requires
+	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/ressources.cpp.o.provides.build
+.PHONY : CMakeFiles/id_dtc.dir/src/ressources.cpp.o.provides
+
+CMakeFiles/id_dtc.dir/src/ressources.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/ressources.cpp.o
+
 CMakeFiles/id_dtc.dir/src/msg.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/msg.cpp.o: ../src/msg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/msg.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/msg.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/msg.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/msg.cpp.o -c /tmp/Dawn2289/src/msg.cpp
 
 CMakeFiles/id_dtc.dir/src/msg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/msg.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/msg.cpp > CMakeFiles/id_dtc.dir/src/msg.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/msg.cpp > CMakeFiles/id_dtc.dir/src/msg.cpp.i
 
 CMakeFiles/id_dtc.dir/src/msg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/msg.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/msg.cpp -o CMakeFiles/id_dtc.dir/src/msg.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/msg.cpp -o CMakeFiles/id_dtc.dir/src/msg.cpp.s
 
 CMakeFiles/id_dtc.dir/src/msg.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/msg.cpp.o.requires
@@ -853,17 +899,17 @@ CMakeFiles/id_dtc.dir/src/msg.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/ms
 
 CMakeFiles/id_dtc.dir/src/tools.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/tools.cpp.o: ../src/tools.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/tools.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/tools.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/tools.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/tools.cpp.o -c /tmp/Dawn2289/src/tools.cpp
 
 CMakeFiles/id_dtc.dir/src/tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/tools.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/tools.cpp > CMakeFiles/id_dtc.dir/src/tools.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/tools.cpp > CMakeFiles/id_dtc.dir/src/tools.cpp.i
 
 CMakeFiles/id_dtc.dir/src/tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/tools.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/tools.cpp -o CMakeFiles/id_dtc.dir/src/tools.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/tools.cpp -o CMakeFiles/id_dtc.dir/src/tools.cpp.s
 
 CMakeFiles/id_dtc.dir/src/tools.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/tools.cpp.o.requires
@@ -876,17 +922,17 @@ CMakeFiles/id_dtc.dir/src/tools.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/
 
 CMakeFiles/id_dtc.dir/src/ui.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/ui.cpp.o: ../src/ui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/ui.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/ui.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/ui.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/ui.cpp.o -c /tmp/Dawn2289/src/ui.cpp
 
 CMakeFiles/id_dtc.dir/src/ui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/ui.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/ui.cpp > CMakeFiles/id_dtc.dir/src/ui.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/ui.cpp > CMakeFiles/id_dtc.dir/src/ui.cpp.i
 
 CMakeFiles/id_dtc.dir/src/ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/ui.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/ui.cpp -o CMakeFiles/id_dtc.dir/src/ui.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/ui.cpp -o CMakeFiles/id_dtc.dir/src/ui.cpp.s
 
 CMakeFiles/id_dtc.dir/src/ui.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/ui.cpp.o.requires
@@ -899,17 +945,17 @@ CMakeFiles/id_dtc.dir/src/ui.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/ui.
 
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o: ../src/unit/archer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/archer.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o -c /tmp/Dawn2289/src/unit/archer.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/archer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/archer.cpp > CMakeFiles/id_dtc.dir/src/unit/archer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/archer.cpp > CMakeFiles/id_dtc.dir/src/unit/archer.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/archer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/archer.cpp -o CMakeFiles/id_dtc.dir/src/unit/archer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/archer.cpp -o CMakeFiles/id_dtc.dir/src/unit/archer.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o.requires
@@ -922,17 +968,17 @@ CMakeFiles/id_dtc.dir/src/unit/archer.cpp.o.provides.build: CMakeFiles/id_dtc.di
 
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o: ../src/unit/druide.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/druide.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o -c /tmp/Dawn2289/src/unit/druide.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/druide.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/druide.cpp > CMakeFiles/id_dtc.dir/src/unit/druide.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/druide.cpp > CMakeFiles/id_dtc.dir/src/unit/druide.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/druide.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/druide.cpp -o CMakeFiles/id_dtc.dir/src/unit/druide.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/druide.cpp -o CMakeFiles/id_dtc.dir/src/unit/druide.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o.requires
@@ -945,17 +991,17 @@ CMakeFiles/id_dtc.dir/src/unit/druide.cpp.o.provides.build: CMakeFiles/id_dtc.di
 
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o: ../src/unit/knight.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/knight.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o -c /tmp/Dawn2289/src/unit/knight.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/knight.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/knight.cpp > CMakeFiles/id_dtc.dir/src/unit/knight.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/knight.cpp > CMakeFiles/id_dtc.dir/src/unit/knight.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/knight.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/knight.cpp -o CMakeFiles/id_dtc.dir/src/unit/knight.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/knight.cpp -o CMakeFiles/id_dtc.dir/src/unit/knight.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o.requires
@@ -968,17 +1014,17 @@ CMakeFiles/id_dtc.dir/src/unit/knight.cpp.o.provides.build: CMakeFiles/id_dtc.di
 
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o: ../src/unit/mage.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/mage.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o -c /tmp/Dawn2289/src/unit/mage.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/mage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/mage.cpp > CMakeFiles/id_dtc.dir/src/unit/mage.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/mage.cpp > CMakeFiles/id_dtc.dir/src/unit/mage.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/mage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/mage.cpp -o CMakeFiles/id_dtc.dir/src/unit/mage.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/mage.cpp -o CMakeFiles/id_dtc.dir/src/unit/mage.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o.requires
@@ -991,17 +1037,17 @@ CMakeFiles/id_dtc.dir/src/unit/mage.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o: ../src/unit/peon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/peon.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o -c /tmp/Dawn2289/src/unit/peon.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/peon.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/peon.cpp > CMakeFiles/id_dtc.dir/src/unit/peon.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/peon.cpp > CMakeFiles/id_dtc.dir/src/unit/peon.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/peon.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/peon.cpp -o CMakeFiles/id_dtc.dir/src/unit/peon.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/peon.cpp -o CMakeFiles/id_dtc.dir/src/unit/peon.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o.requires
@@ -1014,17 +1060,17 @@ CMakeFiles/id_dtc.dir/src/unit/peon.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o: ../src/unit/unit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/unit.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o -c /tmp/Dawn2289/src/unit/unit.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/unit.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/unit.cpp > CMakeFiles/id_dtc.dir/src/unit/unit.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/unit.cpp > CMakeFiles/id_dtc.dir/src/unit/unit.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/unit.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/unit.cpp -o CMakeFiles/id_dtc.dir/src/unit/unit.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/unit.cpp -o CMakeFiles/id_dtc.dir/src/unit/unit.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o.requires
@@ -1037,17 +1083,17 @@ CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o.provides.build: CMakeFiles/id_dtc.dir/
 
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o: ../src/unit/warrior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/warrior.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o -c /tmp/Dawn2289/src/unit/warrior.cpp
 
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/warrior.cpp > CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/unit/warrior.cpp > CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.i
 
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/unit/warrior.cpp -o CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/unit/warrior.cpp -o CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.s
 
 CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o.requires
@@ -1060,17 +1106,17 @@ CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o.provides.build: CMakeFiles/id_dtc.d
 
 CMakeFiles/id_dtc.dir/src/user.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/user.cpp.o: ../src/user.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/user.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/user.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/user.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/user.cpp.o -c /tmp/Dawn2289/src/user.cpp
 
 CMakeFiles/id_dtc.dir/src/user.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/user.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/user.cpp > CMakeFiles/id_dtc.dir/src/user.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/user.cpp > CMakeFiles/id_dtc.dir/src/user.cpp.i
 
 CMakeFiles/id_dtc.dir/src/user.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/user.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/user.cpp -o CMakeFiles/id_dtc.dir/src/user.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/user.cpp -o CMakeFiles/id_dtc.dir/src/user.cpp.s
 
 CMakeFiles/id_dtc.dir/src/user.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/user.cpp.o.requires
@@ -1083,17 +1129,17 @@ CMakeFiles/id_dtc.dir/src/user.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/u
 
 CMakeFiles/id_dtc.dir/src/inter.cpp.o: CMakeFiles/id_dtc.dir/flags.make
 CMakeFiles/id_dtc.dir/src/inter.cpp.o: ../src/inter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/inter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/inter.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/inter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/inter.cpp.o -c /tmp/Dawn2289/src/inter.cpp
 
 CMakeFiles/id_dtc.dir/src/inter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/inter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/inter.cpp > CMakeFiles/id_dtc.dir/src/inter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /tmp/Dawn2289/src/inter.cpp > CMakeFiles/id_dtc.dir/src/inter.cpp.i
 
 CMakeFiles/id_dtc.dir/src/inter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/inter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/inter.cpp -o CMakeFiles/id_dtc.dir/src/inter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /tmp/Dawn2289/src/inter.cpp -o CMakeFiles/id_dtc.dir/src/inter.cpp.s
 
 CMakeFiles/id_dtc.dir/src/inter.cpp.o.requires:
 .PHONY : CMakeFiles/id_dtc.dir/src/inter.cpp.o.requires
@@ -1104,49 +1150,26 @@ CMakeFiles/id_dtc.dir/src/inter.cpp.o.provides: CMakeFiles/id_dtc.dir/src/inter.
 
 CMakeFiles/id_dtc.dir/src/inter.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/inter.cpp.o
 
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o: CMakeFiles/id_dtc.dir/flags.make
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o: ../src/waiting_room.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o -c /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/waiting_room.cpp
-
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/id_dtc.dir/src/waiting_room.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/waiting_room.cpp > CMakeFiles/id_dtc.dir/src/waiting_room.cpp.i
-
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/id_dtc.dir/src/waiting_room.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/src/waiting_room.cpp -o CMakeFiles/id_dtc.dir/src/waiting_room.cpp.s
-
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.requires:
-.PHONY : CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.requires
-
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.provides: CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.requires
-	$(MAKE) -f CMakeFiles/id_dtc.dir/build.make CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.provides.build
-.PHONY : CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.provides
-
-CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.provides.build: CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o
-
 # Object files for target id_dtc
 id_dtc_OBJECTS = \
 "CMakeFiles/id_dtc.dir/src/astar.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/buffer.cpp.o" \
+"CMakeFiles/id_dtc.dir/src/building/academy.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/building.cpp.o" \
-"CMakeFiles/id_dtc.dir/src/building/farm.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/house.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/stable.cpp.o" \
+"CMakeFiles/id_dtc.dir/src/building/temple.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/tower.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/building_interface.cpp.o" \
-"CMakeFiles/id_dtc.dir/src/callback.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/case_map.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/client.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/connection.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/container_game.cpp.o" \
-"CMakeFiles/id_dtc.dir/src/create_server.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/game.cpp.o" \
+"CMakeFiles/id_dtc.dir/src/ressource.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/info.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/interface.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/list_node.cpp.o" \
@@ -1163,6 +1186,8 @@ id_dtc_OBJECTS = \
 "CMakeFiles/id_dtc.dir/src/player.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/point.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/server.cpp.o" \
+"CMakeFiles/id_dtc.dir/src/state.cpp.o" \
+"CMakeFiles/id_dtc.dir/src/ressources.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/msg.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/tools.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/ui.cpp.o" \
@@ -1174,30 +1199,29 @@ id_dtc_OBJECTS = \
 "CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o" \
 "CMakeFiles/id_dtc.dir/src/user.cpp.o" \
-"CMakeFiles/id_dtc.dir/src/inter.cpp.o" \
-"CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o"
+"CMakeFiles/id_dtc.dir/src/inter.cpp.o"
 
 # External object files for target id_dtc
 id_dtc_EXTERNAL_OBJECTS =
 
 id_dtc: CMakeFiles/id_dtc.dir/src/astar.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/buffer.cpp.o
+id_dtc: CMakeFiles/id_dtc.dir/src/building/academy.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/building.cpp.o
-id_dtc: CMakeFiles/id_dtc.dir/src/building/farm.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/house.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/stable.cpp.o
+id_dtc: CMakeFiles/id_dtc.dir/src/building/temple.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/tower.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/building_interface.cpp.o
-id_dtc: CMakeFiles/id_dtc.dir/src/callback.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/case_map.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/client.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/connection.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/container_game.cpp.o
-id_dtc: CMakeFiles/id_dtc.dir/src/create_server.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/game.cpp.o
+id_dtc: CMakeFiles/id_dtc.dir/src/ressource.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/info.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/interface.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/list_node.cpp.o
@@ -1214,6 +1238,8 @@ id_dtc: CMakeFiles/id_dtc.dir/src/node.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/player.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/point.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/server.cpp.o
+id_dtc: CMakeFiles/id_dtc.dir/src/state.cpp.o
+id_dtc: CMakeFiles/id_dtc.dir/src/ressources.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/msg.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/tools.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/ui.cpp.o
@@ -1226,10 +1252,10 @@ id_dtc: CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/user.cpp.o
 id_dtc: CMakeFiles/id_dtc.dir/src/inter.cpp.o
-id_dtc: CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o
 id_dtc: uilibgp2016/lib2D.a
 id_dtc: /usr/lib/i386-linux-gnu/libSDLmain.a
 id_dtc: /usr/lib/i386-linux-gnu/libSDL.so
+id_dtc: /usr/lib/i386-linux-gnu/libSDL_ttf.so
 id_dtc: /usr/lib/i386-linux-gnu/libSDL_ttf.so
 id_dtc: CMakeFiles/id_dtc.dir/build.make
 id_dtc: CMakeFiles/id_dtc.dir/link.txt
@@ -1242,22 +1268,22 @@ CMakeFiles/id_dtc.dir/build: id_dtc
 
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/astar.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/buffer.cpp.o.requires
+CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/academy.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/archery_range.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/barrack.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/building.cpp.o.requires
-CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/farm.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/house.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/stable.cpp.o.requires
+CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/temple.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/tower.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building/town_center.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/building_interface.cpp.o.requires
-CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/callback.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/case_map.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/client.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/connection.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/container_game.cpp.o.requires
-CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/create_server.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/game.cpp.o.requires
+CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/ressource.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/info.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/interface.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/list_node.cpp.o.requires
@@ -1274,6 +1300,8 @@ CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/node.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/player.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/point.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/server.cpp.o.requires
+CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/state.cpp.o.requires
+CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/ressources.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/msg.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/tools.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/ui.cpp.o.requires
@@ -1286,7 +1314,6 @@ CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/unit/unit.cpp.o.requir
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/unit/warrior.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/user.cpp.o.requires
 CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/inter.cpp.o.requires
-CMakeFiles/id_dtc.dir/requires: CMakeFiles/id_dtc.dir/src/waiting_room.cpp.o.requires
 .PHONY : CMakeFiles/id_dtc.dir/requires
 
 CMakeFiles/id_dtc.dir/clean:
@@ -1294,6 +1321,6 @@ CMakeFiles/id_dtc.dir/clean:
 .PHONY : CMakeFiles/id_dtc.dir/clean
 
 CMakeFiles/id_dtc.dir/depend:
-	cd /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289 /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289 /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build /afs/.gpp.isartdigital.com/user/all/delagr_c/rendu/Dawn2289/build/CMakeFiles/id_dtc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /tmp/Dawn2289/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/Dawn2289 /tmp/Dawn2289 /tmp/Dawn2289/build /tmp/Dawn2289/build /tmp/Dawn2289/build/CMakeFiles/id_dtc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/id_dtc.dir/depend
 

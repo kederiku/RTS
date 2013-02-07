@@ -11,22 +11,22 @@ SET(CMAKE_CXX_FLAGS_DEBUG "-g3 -DD_ERRORS_ON")
 SET(srcs
 	src/astar.cpp
 	src/buffer.cpp
+	src/building/academy.cpp
 	src/building/archery_range.cpp
 	src/building/barrack.cpp
 	src/building/building.cpp
-	src/building/farm.cpp
 	src/building/house.cpp
 	src/building/stable.cpp
+	src/building/temple.cpp
 	src/building/tower.cpp
 	src/building/town_center.cpp
 	src/building_interface.cpp
-	src/callback.cpp
 	src/case_map.cpp
 	src/client.cpp
 	src/connection.cpp
 	src/container_game.cpp
-	src/create_server.cpp
 	src/game.cpp
+	src/ressource.cpp
 	src/info.cpp
 	src/interface.cpp
 	src/list_node.cpp
@@ -43,6 +43,8 @@ SET(srcs
 	src/player.cpp
 	src/point.cpp
 	src/server.cpp
+	src/state.cpp
+	src/ressources.cpp
 	src/msg.cpp
 	src/tools.cpp
 	src/ui.cpp
@@ -54,17 +56,17 @@ SET(srcs
 	src/unit/unit.cpp
 	src/unit/warrior.cpp
 	src/user.cpp
-	src/inter.cpp
-	src/waiting_room.cpp)
+	src/inter.cpp)
 
 FIND_PACKAGE(SDL REQUIRED)
+FIND_PACKAGE(Threads REQUIRED)
 FIND_PACKAGE(SDL_ttf REQUIRED)
 LINK_DIRECTORIES(uilibgp2016 uilibgp2016/lib)
 INCLUDE_DIRECTORIES(uilibgp2016/include uilibgp2016/tools ${SDL_INCLUDE_DIR} ${SDLTTF_INCLUDE_DIR} include)
-ADD_DEFINITIONS(-W -Wall -Werror -DD_SDL -lpthread
+ADD_DEFINITIONS(-W -Wall -Werror -DD_SDL
 		-DSRC_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 ADD_EXECUTABLE(${CMAKE_PROJECT_NAME} ${srcs})
-TARGET_LINK_LIBRARIES(${CMAKE_PROJECT_NAME} 2D cmc ${SDL_LIBRARY} ${SDLTTF_LIBRARY})
+TARGET_LINK_LIBRARIES(${CMAKE_PROJECT_NAME} 2D cmc ${SDL_LIBRARY} ${SDLTTF_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 
 IF (UNIX)
 	ADD_CUSTOM_TARGET(distclean COMMENT "Distcleaning lib2D")
